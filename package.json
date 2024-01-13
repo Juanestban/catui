@@ -9,6 +9,8 @@
   },
   "bugs": "https://github.com/Juanestban/catui/issues",
   "scripts": {
+    "dev:docs": "pnpm --filter docs dev",
+    "dev:story": "pnpm --filter storybook storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
