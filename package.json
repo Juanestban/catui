@@ -1,0 +1,22 @@
+{
+  "name": "catui",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "cat ui design system 🐱‍🚀",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Juanestban/catui.git"
+  },
+  "bugs": "https://github.com/Juanestban/catui/issues",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@8.6.12",
+  "engines": {
+    "node": ">=18.14.1",
+    "pnpm": ">=8.6.12"
+  }
+}
