@@ -11,7 +11,7 @@
   "scripts": {
     "dev:docs": "pnpm --filter docs dev",
     "dev:story": "pnpm --filter storybook storybook",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --fix --cache . && pnpm prettier --check --write --cache ."
   },
   "keywords": [],
   "author": "",
@@ -20,5 +20,17 @@
   "engines": {
     "node": ">=18.14.1",
     "pnpm": ">=8.6.12"
+  },
+  "devDependencies": {
+    "@types/eslint": "8.56.2",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-config-standard-with-typescript": "43.0.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-n": "16.6.2",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.33.2",
+    "prettier": "3.2.1"
   }
 }

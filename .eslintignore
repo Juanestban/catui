@@ -1,0 +1,8 @@
+node_modules
+dist
+build
+.astro
+.vscode
+pnpm-lock.yaml
+build.config.ts
+.eslintrc.cjs
