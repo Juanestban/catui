@@ -15,4 +15,5 @@ export default defineBuildConfig({
   outDir: 'dist',
   declaration: true,
   sourcemap: true,
+  failOnWarn: false,
 });

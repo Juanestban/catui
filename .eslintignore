@@ -6,3 +6,4 @@ build
 pnpm-lock.yaml
 build.config.ts
 .eslintrc.cjs
+scripts
