@@ -1,3 +1,52 @@
 .base {
-  border: 1px solid #09f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+}
+
+.base.normal {
+}
+
+.base.normal:hover {
+}
+
+.base.outline {
+}
+
+.base.outline:hover {
+}
+
+.base.ghost {
+}
+
+.base.ghost:hover {
+}
+
+.base.sm {
+}
+
+.base.md {
+}
+
+.base.lg {
+}
+
+.base.xlg {
+}
+
+.base.info {
+}
+
+.base.success {
+}
+
+.base.warning {
+}
+
+.base.danger {
+}
+
+.isDisabled {
 }

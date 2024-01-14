@@ -7,7 +7,7 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "node ./scripts/build.cjs",
+    "dev": "node --watch ./scripts/build.cjs",
     "tsc": "tsc",
     "build": "unbuild",
     "lun-cli": "lun-cli",

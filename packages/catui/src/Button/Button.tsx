@@ -11,7 +11,7 @@ type PrimitiveButton = DetailedHTMLProps<
 
 type Role = 'info' | 'warning' | 'danger' | 'success';
 
-interface ButtonProps extends Omit<PrimitiveButton, 'role'> {
+interface ButtonProps extends Omit<PrimitiveButton, 'role' | 'disabled'> {
   /** are someone know how works the variants? */
   variant?: 'normal' | 'outline' | 'ghost';
   /** role... more of sames 🐱‍💻 */
@@ -20,6 +20,8 @@ interface ButtonProps extends Omit<PrimitiveButton, 'role'> {
   size?: 'sm' | 'md' | 'lg' | 'xlg';
   /** changed old role, that sounds good */
   htmlRole?: string;
+  /** disabled button prop */
+  isDisabled?: boolean;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -31,6 +33,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       className,
       children,
       type = 'button',
+      isDisabled,
       htmlRole,
       ...props
     }: ButtonProps,
@@ -41,7 +44,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         type={type}
         role={htmlRole}
-        className={cn(s.base, s[variant], s[size], s[role], className)}
+        className={cn(s.base, s[variant], s[size], s[role], isDisabled && s.isDisabled, className)}
         {...props}
       >
         {children}
