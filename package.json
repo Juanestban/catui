@@ -9,6 +9,7 @@
   },
   "bugs": "https://github.com/Juanestban/catui/issues",
   "scripts": {
+    "prepare": "husky install",
     "dev:docs": "pnpm --filter docs dev",
     "dev:story": "pnpm --filter storybook storybook",
     "lint": "eslint --fix --cache . && pnpm prettier --check --write --cache ."
@@ -31,6 +32,12 @@
     "eslint-plugin-n": "16.6.2",
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-react": "7.33.2",
+    "husky": "8.0.3",
+    "lint-staged": "15.2.0",
     "prettier": "3.2.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix .",
+    "*.{css,js,jsx,ts,tsx,md,mdx}": "prettier --check --cache --write ."
   }
 }

@@ -18,5 +18,6 @@ module.exports = {
     'react/display-name': OFF,
     'react/react-in-jsx-scope': OFF,
     '@typescript-eslint/no-unsafe-argument': OFF,
+    '@typescript-eslint/no-unused-vars': 'warn',
   },
 };
