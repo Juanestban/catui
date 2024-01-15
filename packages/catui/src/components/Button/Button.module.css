@@ -1,0 +1,75 @@
+.base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 7px 10px;
+  cursor: pointer;
+  min-height: 30px;
+}
+
+.base.normal.info {
+}
+
+.base.normal.success {
+}
+
+.base.normal.warning {
+}
+
+.base.normal.danger {
+}
+
+.base.outline {
+}
+
+.base.outline.info {
+}
+
+.base.outline.success {
+}
+
+.base.outline.warning {
+}
+
+.base.outline.danger {
+}
+
+.base.ghost.info {
+}
+
+.base.ghost.success {
+}
+
+.base.ghost.warning {
+}
+
+.base.ghost.danger {
+}
+
+.base.sm {
+}
+
+.base.md {
+}
+
+.base.lg {
+}
+
+.base.xlg {
+}
+
+.base:hover {
+  filter: brightness(1.1);
+}
+
+.base:active {
+  filter: brightness(0.9);
+}
+
+.isDisabled {
+  cursor: not-allowed;
+}
