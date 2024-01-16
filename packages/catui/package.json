@@ -1,15 +1,18 @@
 {
   "name": "catui",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "type": "module",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "node --watch ./scripts/build.cjs",
+    "dev": "node ./scripts/watcher.cjs",
+    "build": "node ./scripts/build.cjs",
+    "gen:tokens": "node ./scripts/generateTokens.cjs",
     "tsc": "tsc",
-    "build": "unbuild",
+    "unbuild": "unbuild",
+    "ts-patch": "ts-patch",
     "lun-cli": "lun-cli",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,7 +21,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
-    }
+    },
+    "./styles/*": "./dist/styles/*"
   },
   "files": [
     "dist"
@@ -32,6 +36,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@astrojs/cli-kit": "0.4.1",
     "@types/react": "18.2.47",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",

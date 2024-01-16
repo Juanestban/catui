@@ -1,4 +1,5 @@
 import { defineBuildConfig } from 'unbuild';
+import tsConfig from './tsconfig.json';
 
 export default defineBuildConfig({
   entries: [
@@ -6,11 +7,16 @@ export default defineBuildConfig({
       builder: 'mkdist',
       input: './src/',
       outDir: './dist',
+      cleanDist: true,
       esbuild: {
+        color: true,
         jsx: 'automatic',
       },
     },
   ],
+  rollup: {
+    cjsBridge: true,
+  },
   clean: true,
   outDir: 'dist',
   declaration: true,

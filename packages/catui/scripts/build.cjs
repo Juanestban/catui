@@ -1,38 +1,19 @@
-const path = require('node:path');
-const child = require('node:child_process');
-const chokidar = require('chokidar');
+const { exec } = require('./promises.cjs');
 
-const src = path.resolve(__dirname, '../src');
-console.log(src);
-const theWatcher = chokidar.watch(src);
+const run = async () => {
+  const { say, spinner } = await import('@astrojs/cli-kit');
+  await say('Come on to build!', { clear: true });
+  await spinner({
+    start: 'Generating tokens css',
+    end: 'created css tokens',
+    while: () => exec(`pnpm gen:tokens`),
+  });
 
-const build = () => {
-  return new Promise((resolve, reject) => {
-    child.exec('pnpm build', (error, stdout, stderr) => {
-      if (error) {
-        console.error('[-]', error);
-        console.error(stderr);
-        return reject(stderr);
-      }
-
-      return resolve(stdout);
-    });
+  await spinner({
+    start: 'Building components',
+    end: 'build finished',
+    while: () => exec(`pnpm unbuild`),
   });
 };
 
-theWatcher
-  .on('add', (path, stats) => {})
-  .on('change', async (path, stats) => {
-    console.clear();
-    console.log('[+] Building...');
-    console.time('time building');
-    await build();
-    console.log('[+] file changed', path);
-    console.timeEnd('time building');
-  })
-  .on('ready', () => {
-    console.log('[ + ] FINALLY');
-  })
-  .on('error', (err) => {
-    console.error('error on', err);
-  });
+run();
