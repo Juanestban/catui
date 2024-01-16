@@ -135,6 +135,8 @@
   --screens-max-lg: 1023px;
   --screens-max-xl: 1279px;
 
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-lato: 'Lato', sans-serif;
   --font-family-serif: Roboto Slab, 'Times New Roman', serif;
   --font-family-sans: Apercu, Arial, sans-serif;
   --font-family-mono: 'Roboto Mono', Consolas, monospace;
