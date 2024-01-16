@@ -15,7 +15,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     variant: { control: 'select', options: ['normal', 'outline', 'ghost'] as Variant[] },
-    size: { control: 'select', options: ['sm', 'md', 'lg', 'xlg'] as Size[] },
+    size: { control: 'select', options: ['xs', 'sm', 'md', 'lg'] as Size[] },
     role: { control: 'text' },
   },
 } satisfies Meta<typeof Button>;

@@ -2,7 +2,7 @@ export { Base, type BaseProps } from './Base';
 
 export { Button, type ButtonProps } from './Button';
 
-export { ThemeProvider, ThemeContext, useTheme, type ThemeProviderProps } from './ThemeProvider';
+export { CatuiTheme, CatuiThemeContext, useTheme, type CatuiThemeProps } from './ThemeProvider';
 
 export { Text, type TextProps } from './Text';
 

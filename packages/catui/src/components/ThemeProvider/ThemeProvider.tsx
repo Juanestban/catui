@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from 'react';
 import type { PropsWithChildren } from 'react';
 
+import '../../styles/global.css';
 import './ThemeProvider.css';
 
 type Theme = 'dark' | 'light';
