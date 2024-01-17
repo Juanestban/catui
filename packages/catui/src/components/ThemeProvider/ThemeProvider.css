@@ -4,6 +4,7 @@ body[data-theme='light'] {
   --catui-color-complementary-yellow: var(--colors-warning);
   --catui-color-complementary-red: var(--colors-danger);
 
+  --catui-text-color: var(--colors-text-light);
   --catui-text-color-base: var(--colors-text-base);
   --catui-text-color-complementary-indigo: var(--colors-text-info);
   --catui-text-color-complementary-green: var(--colors-text-success);
@@ -27,6 +28,7 @@ body[data-theme='dark'] {
   --catui-color-complementary-yellow: var(--colors-warning-dark);
   --catui-color-complementary-red: var(--colors-danger-dark);
 
+  --catui-text-color: var(--colors-text-dark);
   --catui-text-color-base: var(--colors-text-base-dark);
   --catui-text-color-complementary-indigo: var(--colors-text-info-dark);
   --catui-text-color-complementary-green: var(--colors-text-success-dark);

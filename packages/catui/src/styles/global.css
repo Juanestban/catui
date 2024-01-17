@@ -212,3 +212,33 @@ template {
 [hidden] {
   display: none;
 }
+
+label,
+dt,
+dd,
+p,
+span,
+strong,
+legend,
+b,
+i,
+u,
+abbr,
+cite,
+del,
+em,
+ins,
+kbd,
+mark,
+s,
+samp,
+sub,
+sup,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

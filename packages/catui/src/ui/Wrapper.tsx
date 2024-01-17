@@ -1,5 +1,9 @@
-import { PropsWithChildren } from 'react';
+import { CSSProperties, PropsWithChildren } from 'react';
 
-export const Wrapper = ({ children }: PropsWithChildren) => {
-  return <div style={{ display: 'flex', gap: 15 }}>{children}</div>;
+interface WrapperProps extends PropsWithChildren {
+  flexDirection?: CSSProperties['flexDirection'];
+}
+
+export const Wrapper = ({ flexDirection = 'row', children }: WrapperProps) => {
+  return <div style={{ display: 'flex', gap: 15, flexDirection }}>{children}</div>;
 };

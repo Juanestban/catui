@@ -271,6 +271,9 @@ const decisions = {
     dangerDark: choices.colors.red['500'],
 
     text: {
+      light: choices.colors.black,
+      dark: choices.colors.white,
+
       base: choices.colors.white,
       baseDark: choices.colors.black,
 

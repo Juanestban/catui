@@ -1,3 +1,4 @@
+import path from 'node:path';
 import { defineBuildConfig } from 'unbuild';
 
 export default defineBuildConfig({
@@ -23,6 +24,12 @@ export default defineBuildConfig({
       builder: 'mkdist',
       input: './src/utils/',
       outDir: './build/utils',
+      cleanDist: true,
+    },
+    {
+      builder: 'mkdist',
+      input: './src/types/',
+      outDir: './build/types',
       cleanDist: true,
     },
   ],

@@ -2,6 +2,8 @@ import { forwardRef } from 'react';
 import type { FC, DetailedHTMLProps, ButtonHTMLAttributes } from 'react';
 import cn from 'classnames';
 
+import { FontSize, Role } from '../../types';
+
 import s from './Button.module.css';
 
 type PrimitiveButton = DetailedHTMLProps<
@@ -9,7 +11,7 @@ type PrimitiveButton = DetailedHTMLProps<
   HTMLButtonElement
 >;
 
-type Role = 'info' | 'warning' | 'danger' | 'success';
+type Size = Exclude<FontSize, 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl'>;
 
 interface ButtonProps extends Omit<PrimitiveButton, 'role' | 'disabled'> {
   /** are someone know how works the variants? */
@@ -17,7 +19,7 @@ interface ButtonProps extends Omit<PrimitiveButton, 'role' | 'disabled'> {
   /** role... more of sames 🐱‍💻 */
   role?: Role;
   /** sizes just with two words */
-  size?: 'xs' | 'sm' | 'md' | 'lg';
+  size?: Size;
   /** changed old role, that sounds good */
   htmlRole?: string;
   /** disabled button prop */

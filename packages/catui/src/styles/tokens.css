@@ -232,6 +232,8 @@
   --colors-danger: #c53030;
   --colors-danger-dark: #f56565;
 
+  --colors-text-light: #000;
+  --colors-text-dark: #fff;
   --colors-text-base: #fff;
   --colors-text-base-dark: #000;
   --colors-text-info: #3c366b;
