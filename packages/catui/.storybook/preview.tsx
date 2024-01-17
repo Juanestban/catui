@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
 
-import { Button, CatuiTheme, useTheme } from 'catui';
+import { Button, CatuiTheme, useTheme } from '../src/components';
 
 const InfoTheme = () => {
   const { theme, handleTheme } = useTheme();

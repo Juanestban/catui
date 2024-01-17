@@ -5,8 +5,8 @@ export default defineBuildConfig({
   entries: [
     {
       builder: 'mkdist',
-      input: './src/',
-      outDir: './dist',
+      input: './src/components/',
+      outDir: './build',
       cleanDist: true,
       esbuild: {
         color: true,
@@ -16,6 +16,9 @@ export default defineBuildConfig({
   ],
   rollup: {
     cjsBridge: true,
+    esbuild: {
+      exclude: ['*.stories.ts', '*.stories.tsx'],
+    },
   },
   clean: true,
   outDir: 'dist',
