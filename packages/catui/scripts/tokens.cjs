@@ -228,6 +228,7 @@ const choices = {
     0: '0',
     full: '100%',
     screen: '100vh',
+    dynamicScreen: '100dvh',
   },
   minWidth: {
     0: '0',
@@ -258,6 +259,59 @@ const choices = {
   },
 };
 
-const decisions = {};
+const decisions = {
+  colors: {
+    info: choices.colors.indigo['700'],
+    infoDark: choices.colors.indigo['500'],
+    success: choices.colors.green['700'],
+    successDark: choices.colors.green['500'],
+    warning: choices.colors.yellow['700'],
+    warningDark: choices.colors.yellow['500'],
+    danger: choices.colors.red['700'],
+    dangerDark: choices.colors.red['500'],
+
+    text: {
+      base: choices.colors.white,
+      baseDark: choices.colors.black,
+
+      info: choices.colors.indigo['900'],
+      infoDark: choices.colors.indigo['200'],
+      success: choices.colors.green['900'],
+      successDark: choices.colors.green['200'],
+      warning: choices.colors.yellow['900'],
+      warningDark: choices.colors.yellow['200'],
+      danger: choices.colors.red['900'],
+      dangerDark: choices.colors.red['200'],
+    },
+
+    outline: {
+      info: choices.colors.indigo['400'],
+      infoDark: choices.colors.indigo['500'],
+      success: choices.colors.green['400'],
+      successDark: choices.colors.green['500'],
+      warning: choices.colors.yellow['400'],
+      warningDark: choices.colors.yellow['500'],
+      danger: choices.colors.red['400'],
+      dangerDark: choices.colors.red['500'],
+    },
+
+    ghost: {
+      info: 'rgba(76, 81, 191, 0.7)',
+      infoDark: 'rgba(102, 126, 234, 0.7)',
+      success: 'rgba(47, 133, 90, 0.7)',
+      successDark: 'rgba(72, 187, 120, 0.7)',
+      warning: 'rgba(183, 121, 31, 0.7)',
+      warningDark: 'rgba(236, 201, 75, 0.7)',
+      danger: 'rgba(197, 48, 48, 0.7)',
+      dangerDark: 'rgba(245, 101, 101, 0.7)',
+    },
+  },
+  height: {
+    xs: '1.5rem',
+    sm: '2rem',
+    md: '2.5rem',
+    lg: '3rem',
+  },
+};
 
 module.exports = { choices, decisions };
