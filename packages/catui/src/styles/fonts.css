@@ -42,24 +42,24 @@
 
 .font-montserrat-title {
   font-family: var(--font-family-montserrat);
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   font-style: bold;
 }
 
 .font-montserrat-text {
   font-family: var(--font-family-montserrat);
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
   font-style: normal;
 }
 
 .font-lato-title {
   font-family: var(--font-family-lato);
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   font-style: bold;
 }
 
 .font-lato-text {
   font-family: var(--font-family-lato);
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
   font-style: normal;
 }
