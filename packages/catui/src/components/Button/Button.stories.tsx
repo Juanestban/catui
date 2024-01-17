@@ -1,7 +1,7 @@
 import type { Meta, StoryFn } from '@storybook/react';
 
-import { Button, ButtonProps } from 'catui';
-import { Wrapper } from '../components/Wrapper';
+import { Button, ButtonProps } from '../Button';
+import { Wrapper } from '../../ui/Wrapper';
 
 type Variant = ButtonProps['variant'];
 type Size = ButtonProps['size'];

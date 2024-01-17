@@ -9,3 +9,4 @@ build.config.ts
 scripts
 packages/tokens
 lun.config.cjs
+storybook-static
