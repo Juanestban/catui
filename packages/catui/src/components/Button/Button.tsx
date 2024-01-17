@@ -22,6 +22,9 @@ interface ButtonProps extends Omit<PrimitiveButton, 'role' | 'disabled'> {
   htmlRole?: string;
   /** disabled button prop */
   isDisabled?: boolean;
+  Icon?: JSX.Element;
+  iconRight?: boolean;
+  iconLeft?: boolean;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -34,6 +37,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       children,
       type = 'button',
       isDisabled,
+      Icon,
+      iconLeft,
+      iconRight,
       htmlRole,
       ...props
     }: ButtonProps,
@@ -53,9 +59,12 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           isDisabled && s.isDisabled,
           className,
         )}
+        disabled={isDisabled}
         {...props}
       >
+        {iconLeft && Icon ? Icon : null}
         {children}
+        {iconRight && Icon ? Icon : null}
       </button>
     );
   },
