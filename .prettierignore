@@ -4,3 +4,4 @@ build
 .astro
 .vscode
 pnpm-lock.yaml
+storybook-static
