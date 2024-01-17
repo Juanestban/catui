@@ -17,7 +17,7 @@ interface ButtonProps extends Omit<PrimitiveButton, 'role' | 'disabled'> {
   /** role... more of sames 🐱‍💻 */
   role?: Role;
   /** sizes just with two words */
-  size?: 'sm' | 'md' | 'lg' | 'xlg';
+  size?: 'xs' | 'sm' | 'md' | 'lg';
   /** changed old role, that sounds good */
   htmlRole?: string;
   /** disabled button prop */
@@ -44,7 +44,15 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         type={type}
         role={htmlRole}
-        className={cn(s.base, s[variant], s[size], s[role], isDisabled && s.isDisabled, className)}
+        className={cn(
+          'font-lato-title',
+          s.base,
+          s[variant],
+          s[size],
+          s[role],
+          isDisabled && s.isDisabled,
+          className,
+        )}
         {...props}
       >
         {children}
