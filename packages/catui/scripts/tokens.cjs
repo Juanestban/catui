@@ -154,11 +154,11 @@ const choices = {
     },
   },
   fontFamily: {
-    montserrat: ['"Montserrat"', 'sans-serif'],
-    lato: ['"Lato"', 'sans-serif'],
-    serif: ['Roboto Slab', '"Times New Roman"', 'serif'],
+    montserrat: ["'Montserrat'", 'sans-serif'],
+    lato: ["'Lato'", 'sans-serif'],
+    serif: ['Roboto Slab', "'Times New Roman'", 'serif'],
     sans: ['Apercu', 'Arial', 'sans-serif'],
-    mono: ['"Roboto Mono"', 'Consolas', 'monospace'],
+    mono: ["'Roboto Mono'", 'Consolas', 'monospace'],
   },
   fontSize: {
     base: {

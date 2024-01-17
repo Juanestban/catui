@@ -1,27 +1,36 @@
 import { defineBuildConfig } from 'unbuild';
-import tsConfig from './tsconfig.json';
 
 export default defineBuildConfig({
   entries: [
     {
       builder: 'mkdist',
       input: './src/components/',
-      outDir: './build',
+      outDir: './build/components',
       cleanDist: true,
       esbuild: {
         color: true,
         jsx: 'automatic',
       },
     },
+    './src/index.ts',
+    {
+      builder: 'mkdist',
+      input: './src/styles/',
+      outDir: './build/styles',
+      cleanDist: true,
+    },
+    {
+      builder: 'mkdist',
+      input: './src/utils/',
+      outDir: './build/utils',
+      cleanDist: true,
+    },
   ],
   rollup: {
     cjsBridge: true,
-    esbuild: {
-      exclude: ['*.stories.ts', '*.stories.tsx'],
-    },
   },
   clean: true,
-  outDir: 'dist',
+  outDir: 'build',
   declaration: true,
   sourcemap: true,
   failOnWarn: false,
