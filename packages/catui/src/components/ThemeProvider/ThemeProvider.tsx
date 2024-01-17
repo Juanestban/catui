@@ -28,11 +28,13 @@ function ThemeProvider({ children }: ThemeProviderProps) {
     return item === null ? themeMachine : (item as Theme);
   });
 
-  const handleTheme = (_theme?: Theme) => {
-    const nextTheme: Theme = _theme ?? _theme === 'light' ? 'dark' : 'light';
+  const handleTheme = () => {
+    setTheme((prevTheme) => {
+      const nextTheme = prevTheme === 'light' ? 'dark' : 'light';
 
-    localStorage.setItem(KEY_LOCAL_STORAGE_THEME, nextTheme);
-    setTheme(nextTheme);
+      localStorage.setItem(KEY_LOCAL_STORAGE_THEME, nextTheme);
+      return nextTheme;
+    });
   };
 
   useEffect(() => {

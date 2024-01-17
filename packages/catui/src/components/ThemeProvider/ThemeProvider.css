@@ -1,5 +1,45 @@
 body[data-theme='light'] {
+  --catui-color-complementary-indigo: var(--colors-info);
+  --catui-color-complementary-green: var(--colors-success);
+  --catui-color-complementary-yellow: var(--colors-warning);
+  --catui-color-complementary-red: var(--colors-danger);
+
+  --catui-text-color-base: var(--colors-text-base);
+  --catui-text-color-complementary-indigo: var(--colors-text-info);
+  --catui-text-color-complementary-green: var(--colors-text-success);
+  --catui-text-color-complementary-yellow: var(--colors-text-warning);
+  --catui-text-color-complementary-red: var(--colors-text-danger);
+
+  --catui-color-outline-indigo: var(--colors-outline-info);
+  --catui-color-outline-green: var(--colors-outline-success);
+  --catui-color-outline-yellow: var(--colors-outline-warning);
+  --catui-color-outline-red: var(--colors-outline-danger);
+
+  --catui-color-ghost-indigo: var(--colors-ghost-info);
+  --catui-color-ghost-green: var(--colors-ghost-success);
+  --catui-color-ghost-yellow: var(--colors-ghost-warning);
+  --catui-color-ghost-red: var(--colors-ghost-danger);
 }
 
 body[data-theme='dark'] {
+  --catui-color-complementary-indigo: var(--colors-info-dark);
+  --catui-color-complementary-green: var(--colors-success-dark);
+  --catui-color-complementary-yellow: var(--colors-warning-dark);
+  --catui-color-complementary-red: var(--colors-danger-dark);
+
+  --catui-text-color-base: var(--colors-text-base-dark);
+  --catui-text-color-complementary-indigo: var(--colors-text-info-dark);
+  --catui-text-color-complementary-green: var(--colors-text-success-dark);
+  --catui-text-color-complementary-yellow: var(--colors-text-warning-dark);
+  --catui-text-color-complementary-red: var(--colors-text-danger-dark);
+
+  --catui-color-outline-indigo: var(--colors-outline-info-dark);
+  --catui-color-outline-green: var(--colors-outline-success-dark);
+  --catui-color-outline-yellow: var(--colors-outline-warning-dark);
+  --catui-color-outline-red: var(--colors-outline-danger-dark);
+
+  --catui-color-ghost-indigo: var(--colors-ghost-info-dark);
+  --catui-color-ghost-green: var(--colors-ghost-success-dark);
+  --catui-color-ghost-yellow: var(--colors-ghost-warning-dark);
+  --catui-color-ghost-red: var(--colors-ghost-danger-dark);
 }
