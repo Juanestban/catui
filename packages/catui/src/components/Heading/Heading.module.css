@@ -1,3 +1,142 @@
-.container {
-  border: 1px solid #09f;
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  height: fit-content;
+}
+
+/* colors */
+.heading.base {
+  color: var(--catui-text-color);
+}
+
+.heading.info {
+  color: var(--catui-text-color-complementary-indigo);
+}
+
+.heading.success {
+  color: var(--catui-text-color-complementary-green);
+}
+
+.heading.warning {
+  color: var(--catui-text-color-complementary-yellow);
+}
+
+.heading.danger {
+  color: var(--catui-text-color-complementary-red);
+}
+
+.heading.white {
+  color: var(--colors-white);
+}
+
+.heading.black {
+  color: var(--colors-black);
+}
+
+/* sizes */
+.heading.xs {
+  font-size: var(--font-size-xs);
+}
+
+.heading.sm {
+  font-size: var(--font-size-sm);
+}
+
+.heading.md {
+  font-size: var(--font-size-md);
+}
+
+.heading.lg {
+  font-size: var(--font-size-lg);
+}
+
+.heading.xlg {
+  font-size: var(--font-size-xlg);
+}
+
+.heading._2xl {
+  font-size: var(--font-size-2xl);
+}
+
+.heading._3xl {
+  font-size: var(--font-size-3xl);
+}
+
+.heading._4xl {
+  font-size: var(--font-size-4xl);
+}
+
+/* weight */
+.heading.thin {
+  font-weight: var(--font-weight-thin);
+}
+
+.heading.normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.heading.semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.heading.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/* text-wrap */
+.heading.balance {
+  text-wrap: balance;
+}
+
+.heading.nowrap {
+  text-wrap: nowrap;
+}
+
+.heading.pretty {
+  text-wrap: pretty;
+}
+
+.heading.stable {
+  text-wrap: stable;
+}
+
+.heading.wrap {
+  text-wrap: wrap;
+}
+
+/* text-decoration */
+.heading.dashed {
+  text-decoration: dashed;
+}
+
+.heading.dotted {
+  text-decoration: dotted;
+}
+
+.heading.double {
+  text-decoration: double;
+}
+
+.heading.line-through {
+  text-decoration: line-through;
+}
+
+.heading.overline {
+  text-decoration: overline;
+}
+
+.heading.solid {
+  text-decoration: solid;
+}
+
+.heading.underline {
+  text-decoration: underline;
+}
+
+.heading.wavy {
+  text-decoration: wavy;
+}
+
+.withEllipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
