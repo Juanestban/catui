@@ -1,38 +1,14 @@
 import { Meta, StoryFn } from '@storybook/react';
 
-import { Text, TextProps } from '../Text';
-import { FontSize } from '../../types';
+import { Heading, HeadingProps } from '../Heading';
 
 import { Wrapper } from '../../ui/Wrapper';
 
-type As = TextProps['as'];
+type As = HeadingProps['as'];
 
-const asOptions = [
-  'dt',
-  'dd',
-  'p',
-  'span',
-  'strong',
-  'legend',
-  'b',
-  'i',
-  'u',
-  'abbr',
-  'cite',
-  'del',
-  'em',
-  'ins',
-  'kbd',
-  'mark',
-  's',
-  'samp',
-  'sub',
-  'sup',
-] satisfies As[];
+const asOptions = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'] satisfies As[];
 
 const sizesOptions = [
-  '6xl',
-  '5xl',
   '4xl',
   '3xl',
   '2xl',
@@ -41,9 +17,9 @@ const sizesOptions = [
   'md',
   'sm',
   'xs',
-] satisfies FontSize[];
+] satisfies HeadingProps['fontSize'][];
 
-const weightOptions = ['thin', 'normal', 'semibold', 'bold'] satisfies TextProps['fontWeight'][];
+const weightOptions = ['thin', 'normal', 'semibold', 'bold'] satisfies HeadingProps['fontWeight'][];
 
 const wrapOptions = [
   undefined,
@@ -53,7 +29,7 @@ const wrapOptions = [
   'pretty',
   'stable',
   'wrap',
-] satisfies TextProps['wrap'][];
+] satisfies HeadingProps['wrap'][];
 
 const decorationOptions = [
   'dashed',
@@ -64,11 +40,11 @@ const decorationOptions = [
   'solid',
   'underline',
   'wavy',
-] satisfies TextProps['decoration'][];
+] satisfies HeadingProps['decoration'][];
 
 const meta = {
-  title: 'Cat-UI/Text',
-  component: Text,
+  title: 'Cat-UI/Heading',
+  component: Heading,
   parameters: {
     layout: 'centered',
   },
@@ -103,59 +79,70 @@ const meta = {
       defaultValue: false,
     },
   },
-} satisfies Meta<typeof Text>;
+} satisfies Meta<typeof Heading>;
 
 export default meta;
 
-export const Main: StoryFn<TextProps> = ({
+export const Main: StoryFn<HeadingProps> = ({
   as,
   fontSize,
   fontWeight,
   wrap,
   decoration,
   color,
+  withEllipse,
   children,
 }) => {
   return (
-    <Text
+    <Heading
       as={as}
       wrap={wrap}
       color={color}
       fontSize={fontSize}
       fontWeight={fontWeight}
       decoration={decoration}
+      withEllipse={withEllipse}
     >
       {children}
-    </Text>
+    </Heading>
   );
 };
 
 Main.args = {
-  as: 'p',
+  as: 'h2',
   fontSize: 'md',
   fontWeight: 'normal',
   wrap: undefined,
   decoration: undefined,
   color: 'base',
-  children: 'Main Text component 🐱‍🚀',
+  withEllipse: false,
+  children: 'Main Heading component 🐱‍🚀',
 };
 
-export const As: StoryFn<TextProps> = ({ fontSize, fontWeight, wrap, decoration, color }) => {
+export const As: StoryFn<HeadingProps> = ({
+  fontSize,
+  fontWeight,
+  wrap,
+  decoration,
+  color,
+  withEllipse,
+}) => {
   return (
     <Wrapper flexDirection="column">
       {asOptions.map((as, index) => (
         <div key={index}>
-          <Text
+          <Heading
             as={as}
             wrap={wrap}
             color={color}
             fontSize={fontSize}
             fontWeight={fontWeight}
             decoration={decoration}
+            withEllipse={withEllipse}
             style={{ margin: 0 }}
           >
             As: {as}
-          </Text>
+          </Heading>
         </div>
       ))}
     </Wrapper>
@@ -167,14 +154,22 @@ As.args = {
   fontWeight: 'normal',
   wrap: undefined,
   decoration: undefined,
+  withEllipse: false,
   color: 'base',
 };
 
-export const FontSizes: StoryFn<TextProps> = ({ as, fontWeight, wrap, decoration, color }) => {
+export const FontSizes: StoryFn<HeadingProps> = ({
+  as,
+  fontWeight,
+  wrap,
+  decoration,
+  color,
+  withEllipse,
+}) => {
   return (
     <Wrapper flexDirection="column">
       {sizesOptions.map((fontSize, index) => (
-        <Text
+        <Heading
           key={index}
           as={as}
           fontSize={fontSize}
@@ -182,27 +177,36 @@ export const FontSizes: StoryFn<TextProps> = ({ as, fontWeight, wrap, decoration
           color={color}
           fontWeight={fontWeight}
           decoration={decoration}
+          withEllipse={withEllipse}
         >
           ({fontSize}) I love the cats 💜🐱‍👓!
-        </Text>
+        </Heading>
       ))}
     </Wrapper>
   );
 };
 
 FontSizes.args = {
-  as: 'p',
+  as: 'h2',
   fontWeight: 'normal',
   wrap: undefined,
   decoration: undefined,
+  withEllipse: false,
   color: 'base',
 };
 
-export const FontWeights: StoryFn<TextProps> = ({ as, fontSize, wrap, decoration, color }) => {
+export const FontWeights: StoryFn<HeadingProps> = ({
+  as,
+  fontSize,
+  wrap,
+  decoration,
+  color,
+  withEllipse,
+}) => {
   return (
     <Wrapper>
       {weightOptions.map((weight, index) => (
-        <Text
+        <Heading
           key={index}
           as={as}
           fontSize={fontSize}
@@ -210,23 +214,24 @@ export const FontWeights: StoryFn<TextProps> = ({ as, fontSize, wrap, decoration
           wrap={wrap}
           decoration={decoration}
           color={color}
+          withEllipse={withEllipse}
         >
           FontWeight: {weight}
-        </Text>
+        </Heading>
       ))}
     </Wrapper>
   );
 };
 
 FontWeights.args = {
-  as: 'p',
+  as: 'h2',
   fontSize: '4xl',
   wrap: undefined,
   decoration: undefined,
   color: 'base',
 };
 
-export const Wraps: StoryFn<TextProps> = ({ as, fontSize, fontWeight, decoration, color }) => {
+export const Wraps: StoryFn<HeadingProps> = ({ as, fontSize, fontWeight, decoration, color }) => {
   return (
     <Wrapper flexDirection="column">
       {wrapOptions.map((wrap, index) => (
@@ -242,10 +247,10 @@ export const Wraps: StoryFn<TextProps> = ({ as, fontSize, fontWeight, decoration
             borderRadius: 5,
           }}
         >
-          <Text fontWeight="bold">
+          <Heading fontWeight="bold">
             Wrap: {wrap} {index === 3 && 'withEllipse'}{' '}
-          </Text>
-          <Text
+          </Heading>
+          <Heading
             as={as}
             fontSize={fontSize}
             fontWeight={fontWeight}
@@ -257,18 +262,25 @@ export const Wraps: StoryFn<TextProps> = ({ as, fontSize, fontWeight, decoration
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis velit, sequi
             voluptatem nam officia, harum, nesciunt deleniti nemo explicabo fugit? Quod distinctio
             consequuntur ipsum in! Quod ipsa perferendis qui?
-          </Text>
+          </Heading>
         </div>
       ))}
     </Wrapper>
   );
 };
 
-export const Decorators: StoryFn<TextProps> = ({ as, fontSize, fontWeight, wrap, color }) => {
+export const Decorators: StoryFn<HeadingProps> = ({
+  as,
+  fontSize,
+  fontWeight,
+  wrap,
+  color,
+  withEllipse,
+}) => {
   return (
     <Wrapper>
       {decorationOptions.map((decoration, index) => (
-        <Text
+        <Heading
           key={index}
           as={as}
           decoration={decoration}
@@ -276,9 +288,10 @@ export const Decorators: StoryFn<TextProps> = ({ as, fontSize, fontWeight, wrap,
           fontWeight={fontWeight}
           wrap={wrap}
           color={color}
+          withEllipse={withEllipse}
         >
           decoration: {decoration}
-        </Text>
+        </Heading>
       ))}
     </Wrapper>
   );
