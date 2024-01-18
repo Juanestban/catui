@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
 
-import { Button, CatuiTheme, useTheme } from '../src/components';
+import { Button, CatuiTheme, Text, useTheme } from '../src/components';
 
 const InfoTheme = () => {
   const { theme, handleTheme } = useTheme();
@@ -9,7 +9,7 @@ const InfoTheme = () => {
   return (
     <>
       <span style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 20 }}>
-        current theme: {theme}
+        <Text>current theme: {theme}</Text>
         <Button size="xs" onClick={handleTheme}>
           change theme
         </Button>
