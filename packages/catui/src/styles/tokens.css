@@ -262,6 +262,8 @@
   --colors-ghost-warning-dark: rgba(236, 201, 75, 0.7);
   --colors-ghost-danger: rgba(197, 48, 48, 0.7);
   --colors-ghost-danger-dark: rgba(245, 101, 101, 0.7);
+  --colors-kbd: #e2e8f0;
+  --colors-kbd-dark: rgba(45, 55, 72, 0.6);
 
   --height-xs: 1.5rem;
   --height-sm: 2rem;

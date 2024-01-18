@@ -308,6 +308,9 @@ const decisions = {
       danger: 'rgba(197, 48, 48, 0.7)',
       dangerDark: 'rgba(245, 101, 101, 0.7)',
     },
+
+    kbd: choices.colors.gray['300'],
+    kbdDark: 'rgba(45, 55, 72, 0.6)',
   },
   height: {
     xs: '1.5rem',

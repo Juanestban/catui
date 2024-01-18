@@ -1,0 +1,12 @@
+.kbd {
+  font-family: 'system', monospace;
+  background: var(--catui-kbd-background-color);
+  border-radius: var(--border-radius-md);
+  white-space: nowrap;
+  line-height: var(--line-height-normal);
+  font-size: var(--font-size-sm);
+  border-width: 1px 1px 3px;
+  border-style: solid;
+  font-weight: var(--font-weight-bold);
+  padding-inline: var(--spacing-3);
+}

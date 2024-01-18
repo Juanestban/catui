@@ -20,6 +20,8 @@ body[data-theme='light'] {
   --catui-color-ghost-green: var(--colors-ghost-success);
   --catui-color-ghost-yellow: var(--colors-ghost-warning);
   --catui-color-ghost-red: var(--colors-ghost-danger);
+
+  --catui-kbd-background-color: var(--colors-kbd);
 }
 
 body[data-theme='dark'] {
@@ -44,4 +46,6 @@ body[data-theme='dark'] {
   --catui-color-ghost-green: var(--colors-ghost-success-dark);
   --catui-color-ghost-yellow: var(--colors-ghost-warning-dark);
   --catui-color-ghost-red: var(--colors-ghost-danger-dark);
+
+  --catui-kbd-background-color: var(--colors-kbd-dark);
 }
