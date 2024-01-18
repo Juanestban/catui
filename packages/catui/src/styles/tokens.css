@@ -227,8 +227,8 @@
   --colors-info-dark: #667eea;
   --colors-success: #2f855a;
   --colors-success-dark: #48bb78;
-  --colors-warning: #b7791f;
-  --colors-warning-dark: #ecc94b;
+  --colors-warning: #c05621;
+  --colors-warning-dark: #ed8936;
   --colors-danger: #c53030;
   --colors-danger-dark: #f56565;
 
@@ -240,8 +240,8 @@
   --colors-text-info-dark: #c3dafe;
   --colors-text-success: #22543d;
   --colors-text-success-dark: #c6f6d5;
-  --colors-text-warning: #744210;
-  --colors-text-warning-dark: #fefcbf;
+  --colors-text-warning: #7b341e;
+  --colors-text-warning-dark: #feebc8;
   --colors-text-danger: #742a2a;
   --colors-text-danger-dark: #fed7d7;
 
@@ -249,8 +249,8 @@
   --colors-outline-info-dark: #667eea;
   --colors-outline-success: #68d391;
   --colors-outline-success-dark: #48bb78;
-  --colors-outline-warning: #f6e05e;
-  --colors-outline-warning-dark: #ecc94b;
+  --colors-outline-warning: #f6ad55;
+  --colors-outline-warning-dark: #ed8936;
   --colors-outline-danger: #fc8181;
   --colors-outline-danger-dark: #f56565;
 
@@ -258,12 +258,23 @@
   --colors-ghost-info-dark: rgba(102, 126, 234, 0.7);
   --colors-ghost-success: rgba(47, 133, 90, 0.7);
   --colors-ghost-success-dark: rgba(72, 187, 120, 0.7);
-  --colors-ghost-warning: rgba(183, 121, 31, 0.7);
-  --colors-ghost-warning-dark: rgba(236, 201, 75, 0.7);
+  --colors-ghost-warning: rgba(246, 173, 85, 0.7);
+  --colors-ghost-warning-dark: rgba(237, 137, 54, 0.7);
   --colors-ghost-danger: rgba(197, 48, 48, 0.7);
   --colors-ghost-danger-dark: rgba(245, 101, 101, 0.7);
   --colors-kbd: #e2e8f0;
   --colors-kbd-dark: rgba(45, 55, 72, 0.6);
+
+  --colors-progress-bg: rgba(160, 174, 192, 0.8);
+  --colors-progress-bg-dark: #1a202c;
+  --colors-progress-info: #4c51bf;
+  --colors-progress-info-dark: #5a67d8;
+  --colors-progress-success: #2f855a;
+  --colors-progress-success-dark: #38a169;
+  --colors-progress-warning: #c05621;
+  --colors-progress-warning-dark: #dd6b20;
+  --colors-progress-danger: #c53030;
+  --colors-progress-danger-dark: #e53e3e;
 
   --height-xs: 1.5rem;
   --height-sm: 2rem;

@@ -265,8 +265,8 @@ const decisions = {
     infoDark: choices.colors.indigo['500'],
     success: choices.colors.green['700'],
     successDark: choices.colors.green['500'],
-    warning: choices.colors.yellow['700'],
-    warningDark: choices.colors.yellow['500'],
+    warning: choices.colors.orange['700'],
+    warningDark: choices.colors.orange['500'],
     danger: choices.colors.red['700'],
     dangerDark: choices.colors.red['500'],
 
@@ -281,8 +281,8 @@ const decisions = {
       infoDark: choices.colors.indigo['200'],
       success: choices.colors.green['900'],
       successDark: choices.colors.green['200'],
-      warning: choices.colors.yellow['900'],
-      warningDark: choices.colors.yellow['200'],
+      warning: choices.colors.orange['900'],
+      warningDark: choices.colors.orange['200'],
       danger: choices.colors.red['900'],
       dangerDark: choices.colors.red['200'],
     },
@@ -292,8 +292,8 @@ const decisions = {
       infoDark: choices.colors.indigo['500'],
       success: choices.colors.green['400'],
       successDark: choices.colors.green['500'],
-      warning: choices.colors.yellow['400'],
-      warningDark: choices.colors.yellow['500'],
+      warning: choices.colors.orange['400'],
+      warningDark: choices.colors.orange['500'],
       danger: choices.colors.red['400'],
       dangerDark: choices.colors.red['500'],
     },
@@ -303,14 +303,31 @@ const decisions = {
       infoDark: 'rgba(102, 126, 234, 0.7)',
       success: 'rgba(47, 133, 90, 0.7)',
       successDark: 'rgba(72, 187, 120, 0.7)',
-      warning: 'rgba(183, 121, 31, 0.7)',
-      warningDark: 'rgba(236, 201, 75, 0.7)',
+      warning: 'rgba(246, 173, 85, 0.7)',
+      warningDark: 'rgba(237, 137, 54, 0.7)',
       danger: 'rgba(197, 48, 48, 0.7)',
       dangerDark: 'rgba(245, 101, 101, 0.7)',
     },
 
     kbd: choices.colors.gray['300'],
     kbdDark: 'rgba(45, 55, 72, 0.6)',
+
+    progress: {
+      bg: 'rgba(160, 174, 192, 0.8)',
+      bgDark: choices.colors.gray['900'],
+
+      info: choices.colors.indigo['700'],
+      infoDark: choices.colors.indigo['600'],
+
+      success: choices.colors.green['700'],
+      successDark: choices.colors.green['600'],
+
+      warning: choices.colors.orange['700'],
+      warningDark: choices.colors.orange['600'],
+
+      danger: choices.colors.red['700'],
+      dangerDark: choices.colors.red['600'],
+    },
   },
   height: {
     xs: '1.5rem',
