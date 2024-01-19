@@ -11,11 +11,11 @@ interface DividerProps extends Omit<PrimitiveSpan, 'children' | 'aria-orientatio
 }
 
 const Divider = forwardRef<HTMLHRElement, DividerProps>(
-  ({ className, orientation = 'horizontal', height = 50, ...props }, ref) => {
+  ({ className, orientation = 'horizontal', height = 50, style, ...props }, ref) => {
     return (
       <div
         className={cn(s.container, s[orientation])}
-        style={{ height: orientation === 'horizontal' ? undefined : height }}
+        style={{ height: orientation === 'horizontal' ? undefined : height, ...style }}
       >
         <hr
           ref={ref}
