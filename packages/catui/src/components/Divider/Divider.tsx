@@ -7,17 +7,23 @@ type PrimitiveSpan = DetailedHTMLProps<HTMLAttributes<HTMLHRElement>, HTMLHRElem
 
 interface DividerProps extends Omit<PrimitiveSpan, 'children' | 'aria-orientation'> {
   orientation?: 'horizontal' | 'vertical';
+  height?: number;
 }
 
 const Divider = forwardRef<HTMLHRElement, DividerProps>(
-  ({ className, orientation = 'horizontal', ...props }, ref) => {
+  ({ className, orientation = 'horizontal', height = 50, ...props }, ref) => {
     return (
-      <hr
-        ref={ref}
-        className={cn(s.divider, className)}
-        aria-orientation={orientation}
-        {...props}
-      />
+      <div
+        className={cn(s.container, s[orientation])}
+        style={{ height: orientation === 'horizontal' ? undefined : height }}
+      >
+        <hr
+          ref={ref}
+          className={cn(s.divider, s[orientation], className)}
+          aria-orientation={orientation}
+          {...props}
+        />
+      </div>
     );
   },
 ) as FC<DividerProps>;

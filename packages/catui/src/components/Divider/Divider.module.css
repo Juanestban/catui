@@ -1,8 +1,24 @@
 .divider {
   opacity: 0.7;
-  border-width: 0 0 1px;
   border-style: solid;
   border-color: var(--colors-gray-500);
   border-image: initial;
+}
+
+.divider.horizontal {
   width: 100%;
+  border-width: 0 0 1px;
+}
+
+.divider.vertical {
+  height: 100%;
+  border-width: 0 0 0 1px;
+}
+
+.container.horizontal {
+  height: 1px;
+}
+
+.container.vertical {
+  width: 1px;
 }

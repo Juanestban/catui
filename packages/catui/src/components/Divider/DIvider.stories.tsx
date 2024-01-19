@@ -11,15 +11,17 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     orientation: { control: 'select', options: ['horizontal', 'vertical'] },
+    height: { control: 'number', defaultValue: undefined },
   },
 } satisfies Meta<typeof Divider>;
 
 export default meta;
 
-export const Main: StoryFn<DividerProps> = ({ orientation }) => {
-  return <Divider orientation={orientation} />;
+export const Main: StoryFn<DividerProps> = ({ orientation, height }) => {
+  return <Divider orientation={orientation} height={height} />;
 };
 
 Main.args = {
   orientation: 'horizontal',
+  height: undefined,
 };
