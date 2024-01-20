@@ -5,6 +5,6 @@ export default create({
 
   brandTitle: 'CatUI Design System',
   brandUrl: 'https://catui.dev',
-  brandImage: '/catui.png',
+  brandImage: '/catui-v2.png',
   brandTarget: '_self',
 });
