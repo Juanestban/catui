@@ -276,6 +276,9 @@
   --colors-progress-danger: #c53030;
   --colors-progress-danger-dark: #e53e3e;
 
+  --colors-skeleton-from: rgba(0, 0, 0, 0.5);
+  --colors-skeleton-to: rgba(0, 0, 0, 0.2);
+
   --height-xs: 1.5rem;
   --height-sm: 2rem;
   --height-md: 2.5rem;

@@ -29,6 +29,9 @@ body[data-theme='light'] {
   --catui-progress-success: var(--colors-progress-success);
   --catui-progress-warning: var(--colors-progress-warning);
   --catui-progress-danger: var(--colors-progress-danger);
+
+  --catui-skeleton-bg-from: var(--colors-skeleton-from);
+  --catui-skeleton-bg-to: var(--colors-skeleton-to);
 }
 
 body[data-theme='dark'] {
@@ -62,4 +65,7 @@ body[data-theme='dark'] {
   --catui-progress-success: var(--colors-progress-success-dark);
   --catui-progress-warning: var(--colors-progress-warning-dark);
   --catui-progress-danger: var(--colors-progress-danger-dark);
+
+  --catui-skeleton-bg-from: var(--colors-skeleton-from);
+  --catui-skeleton-bg-to: var(--colors-skeleton-to);
 }

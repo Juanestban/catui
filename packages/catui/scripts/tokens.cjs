@@ -328,7 +328,13 @@ const decisions = {
       danger: choices.colors.red['700'],
       dangerDark: choices.colors.red['600'],
     },
+
+    skeleton: {
+      from: 'rgba(0, 0, 0, 0.5)',
+      to: 'rgba(0, 0, 0, 0.2)',
+    },
   },
+
   height: {
     xs: '1.5rem',
     sm: '2rem',
