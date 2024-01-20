@@ -1,9 +1,11 @@
-import { FC, DetailedHTMLProps, HTMLAttributes, forwardRef } from 'react';
+import { FC, forwardRef } from 'react';
 import cn from 'classnames';
+
+import { PrimitiveProps } from '../../types';
 
 import s from './Kbd.module.css';
 
-type KbdProps = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
+type KbdProps = PrimitiveProps<HTMLElement>;
 
 const Kbd = forwardRef<HTMLElement, KbdProps>(({ className, children, ...props }, ref) => {
   return (

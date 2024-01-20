@@ -1,11 +1,11 @@
-import { FC, DetailedHTMLProps, HTMLAttributes, forwardRef } from 'react';
+import { FC, forwardRef } from 'react';
 import cn from 'classnames';
+
+import { PrimitiveProps } from '../../types';
 
 import s from './Skeleton.module.css';
 
-type PrimitiveDiv = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
-
-interface SkeletonProps extends PrimitiveDiv {
+interface SkeletonProps extends PrimitiveProps<HTMLDivElement> {
   h?: number | string;
   w?: number | string;
   isRound?: boolean;

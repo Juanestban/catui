@@ -1,15 +1,11 @@
-import { forwardRef } from 'react';
-import type { FC, DetailedHTMLProps, ButtonHTMLAttributes } from 'react';
+import { forwardRef, type FC } from 'react';
 import cn from 'classnames';
 
-import { FontSize, Role } from '../../types';
+import { FontSize, Role, PrimitiveButtonProps } from '../../types';
 
 import s from './Button.module.css';
 
-type PrimitiveButton = DetailedHTMLProps<
-  ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
->;
+type PrimitiveButton = PrimitiveButtonProps<HTMLButtonElement>;
 
 type Size = Exclude<FontSize, 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl'>;
 

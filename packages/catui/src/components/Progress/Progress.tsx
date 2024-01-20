@@ -1,13 +1,13 @@
-import { FC, DetailedHTMLProps, HTMLAttributes, forwardRef } from 'react';
+import { FC, forwardRef } from 'react';
 import cn from 'classnames';
 
 import { normalizePercentage } from '../../utils/normalize';
-import { Role } from '../../types';
+import { PrimitiveProps, Role } from '../../types';
 import { Text } from '../Text';
 
 import s from './Progress.module.css';
 
-type PrimitiveDiv = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+type PrimitiveDiv = PrimitiveProps<HTMLDivElement>;
 
 interface ProgressProps extends Omit<PrimitiveDiv, 'children' | 'color'> {
   /** colors cute 🐱‍🏍 */

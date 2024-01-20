@@ -1,17 +1,11 @@
-import {
-  FC,
-  DetailedHTMLProps,
-  InputHTMLAttributes,
-  ChangeEvent,
-  forwardRef,
-  useState,
-  useEffect,
-} from 'react';
+import { FC, ChangeEvent, forwardRef, useState, useEffect } from 'react';
 import cn from 'classnames';
+
+import { PrimitiveInputProps } from '@catui/types';
 
 import s from './Switch.module.css';
 
-type PrimitiveProps = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+type PrimitiveProps = PrimitiveInputProps<HTMLInputElement>;
 
 interface SwitchProps
   extends Omit<PrimitiveProps, 'defaultValue' | 'defaultChecked' | 'checked' | 'children'> {

@@ -1,9 +1,11 @@
-import { FC, DetailedHTMLProps, HTMLAttributes, forwardRef } from 'react';
+import { FC, forwardRef } from 'react';
 import cn from 'classnames';
+
+import { PrimitiveProps } from '../../types';
 
 import s from './Divider.module.css';
 
-type PrimitiveSpan = DetailedHTMLProps<HTMLAttributes<HTMLHRElement>, HTMLHRElement>;
+type PrimitiveSpan = PrimitiveProps<HTMLHRElement>;
 
 interface DividerProps extends Omit<PrimitiveSpan, 'children' | 'aria-orientation'> {
   orientation?: 'horizontal' | 'vertical';
