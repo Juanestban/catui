@@ -32,6 +32,13 @@ body[data-theme='light'] {
 
   --catui-skeleton-bg-from: var(--colors-skeleton-from);
   --catui-skeleton-bg-to: var(--colors-skeleton-to);
+
+  --catui-switch-color: var(--colors-switch-base);
+  --catui-switch-bg-color: var(--colors-switch-bg);
+  --catui-switch-bg-color-checked: var(--colors-switch-bg-checked);
+
+  --catui-switch-color-disabled: var(--colors-switch-base-disabled);
+  --catui-switch-bg-color-disabled: var(--colors-switch-bg-disabled);
 }
 
 body[data-theme='dark'] {
@@ -68,4 +75,11 @@ body[data-theme='dark'] {
 
   --catui-skeleton-bg-from: var(--colors-skeleton-from);
   --catui-skeleton-bg-to: var(--colors-skeleton-to);
+
+  --catui-switch-color: var(--colors-switch-base-dark);
+  --catui-switch-bg-color: var(--colors-switch-bg-dark);
+  --catui-switch-bg-color-checked: var(--colors-switch-bg-checked-dark);
+
+  --catui-switch-color-disabled: var(--colors-switch-base-disabled-dark);
+  --catui-switch-bg-color-disabled: var(--colors-switch-bg-disabled-dark);
 }

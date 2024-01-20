@@ -1,0 +1,61 @@
+.switch {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  transition: background-color 500ms ease;
+}
+
+.switch.checked {
+  background-color: var(--catui-switch-bg-color-checked);
+  border-color: var(--catui-switch-bg-color-checked);
+  transition: background-color 500ms ease;
+}
+
+.switch.unchecked {
+  background-color: var(--catui-switch-bg-color);
+  border-color: var(--catui-switch-bg-color);
+  transition: background-color 500ms ease;
+}
+
+.switch.isDisabled {
+  background-color: var(--catui-switch-bg-color-disabled);
+  border-color: var(--catui-switch-bg-color-disabled);
+}
+
+.circle {
+  display: block;
+  width: 30px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--catui-switch-color);
+  transform: translateX(0%);
+  transition: transform 500ms ease;
+  border: 1px solid var(--catui-switch-color);
+}
+
+.circle.checked {
+  transform: translateX(100%);
+  transition: transform 500ms ease;
+}
+
+.circle.isDisabled {
+  background-color: var(--catui-switch-color-disabled);
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.checkbox.isDisabled {
+  cursor: not-allowed;
+}

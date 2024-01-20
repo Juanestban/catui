@@ -333,6 +333,20 @@ const decisions = {
       from: 'rgba(0, 0, 0, 0.5)',
       to: 'rgba(0, 0, 0, 0.2)',
     },
+
+    switch: {
+      base: choices.colors.gray['300'],
+      baseDark: choices.colors.gray['100'],
+      bg: choices.colors.red['400'],
+      bgDark: choices.colors.red['500'],
+      bgChecked: choices.colors.green['400'],
+      bgCheckedDark: choices.colors.green['500'],
+
+      baseDisabled: choices.colors.gray['500'],
+      baseDisabledDark: choices.colors.gray['800'],
+      bgDisabled: choices.colors.gray['300'],
+      bgDisabledDark: choices.colors.gray['700'],
+    },
   },
 
   height: {

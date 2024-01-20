@@ -279,6 +279,17 @@
   --colors-skeleton-from: rgba(0, 0, 0, 0.5);
   --colors-skeleton-to: rgba(0, 0, 0, 0.2);
 
+  --colors-switch-base: #e2e8f0;
+  --colors-switch-base-dark: #f7fafc;
+  --colors-switch-bg: #fc8181;
+  --colors-switch-bg-dark: #f56565;
+  --colors-switch-bg-checked: #68d391;
+  --colors-switch-bg-checked-dark: #48bb78;
+  --colors-switch-base-disabled: #a0aec0;
+  --colors-switch-base-disabled-dark: #2d3748;
+  --colors-switch-bg-disabled: #e2e8f0;
+  --colors-switch-bg-disabled-dark: #4a5568;
+
   --height-xs: 1.5rem;
   --height-sm: 2rem;
   --height-md: 2.5rem;

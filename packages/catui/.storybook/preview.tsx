@@ -9,7 +9,7 @@ const InfoTheme = () => {
   return (
     <>
       <span style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 20 }}>
-        <Text>current theme: {theme}</Text>
+        <Text>theme: {theme}</Text>
         <Button size="xs" onClick={handleTheme}>
           change theme
         </Button>
