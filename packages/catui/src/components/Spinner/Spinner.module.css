@@ -1,0 +1,69 @@
+.container {
+  display: inline-flex;
+  perspective: 800px;
+}
+
+.spinner {
+  display: block;
+  border-radius: 50%;
+  background: var(--catui-spinner-primary);
+  animation: rotate 1.5s linear infinite;
+  transform-style: preserve-3d;
+}
+
+.spinner:before,
+.spinner:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+}
+
+.spinner:before {
+  transform: rotateY(90deg);
+}
+
+.spinner:after {
+  transform: rotateX(90deg);
+}
+
+.spinner.xs {
+  width: var(--spinner-xs);
+  height: var(--spinner-xs);
+}
+
+.spinner.sm {
+  width: var(--spinner-sm);
+  height: var(--spinner-sm);
+}
+
+.spinner.md {
+  width: var(--spinner-md);
+  height: var(--spinner-md);
+}
+
+.spinner.lg {
+  width: var(--spinner-lg);
+  height: var(--spinner-lg);
+}
+
+.spinner.xl {
+  width: var(--spinner-xl);
+  height: var(--spinner-xl);
+}
+
+.spinner._2xl {
+  width: var(--spinner-2xl);
+  height: var(--spinner-2xl);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
