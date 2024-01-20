@@ -347,6 +347,11 @@ const decisions = {
       bgDisabled: choices.colors.gray['300'],
       bgDisabledDark: choices.colors.gray['700'],
     },
+
+    spinner: {
+      primary: 'linear-gradient(45deg, #87cefa, #4169e1)',
+      primaryDark: 'linear-gradient(45deg, #87cefa, #4169e1)',
+    },
   },
 
   height: {
@@ -354,6 +359,15 @@ const decisions = {
     sm: '2rem',
     md: '2.5rem',
     lg: '3rem',
+  },
+
+  spinner: {
+    xs: '1.5rem',
+    sm: '2rem',
+    md: '2.5rem',
+    lg: '3rem',
+    xl: '4.5rem',
+    '2xl': '5.5rem',
   },
 };
 

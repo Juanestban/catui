@@ -39,6 +39,8 @@ body[data-theme='light'] {
 
   --catui-switch-color-disabled: var(--colors-switch-base-disabled);
   --catui-switch-bg-color-disabled: var(--colors-switch-bg-disabled);
+
+  --catui-spinner-primary: var(--colors-spinner-primary);
 }
 
 body[data-theme='dark'] {
@@ -82,4 +84,6 @@ body[data-theme='dark'] {
 
   --catui-switch-color-disabled: var(--colors-switch-base-disabled-dark);
   --catui-switch-bg-color-disabled: var(--colors-switch-bg-disabled-dark);
+
+  --catui-spinner-primary: var(--colors-spinner-primary-dark);
 }

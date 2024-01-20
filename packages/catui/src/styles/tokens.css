@@ -290,8 +290,18 @@
   --colors-switch-bg-disabled: #e2e8f0;
   --colors-switch-bg-disabled-dark: #4a5568;
 
+  --colors-spinner-primary: linear-gradient(45deg, #87cefa, #4169e1);
+  --colors-spinner-primary-dark: linear-gradient(45deg, #87cefa, #4169e1);
+
   --height-xs: 1.5rem;
   --height-sm: 2rem;
   --height-md: 2.5rem;
   --height-lg: 3rem;
+
+  --spinner-xs: 1.5rem;
+  --spinner-sm: 2rem;
+  --spinner-md: 2.5rem;
+  --spinner-lg: 3rem;
+  --spinner-xl: 4.5rem;
+  --spinner-2xl: 5.5rem;
 }
