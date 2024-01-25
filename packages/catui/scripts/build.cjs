@@ -1,24 +1,19 @@
-const path = require('node:path');
-const chokidar = require('chokidar');
+const { exec } = require('./promises.cjs');
 
-const src = path.resolve(__dirname, '../src');
-console.log(src);
-const theWatcher = chokidar.watch(src);
-
-theWatcher
-  .on('add', (path, stats) => {
-    console.log('ADDED');
-    console.log(path);
-    console.log(stats);
-  })
-  .on('change', (path, stats) => {
-    console.log('CHANGED');
-    console.log(path);
-    console.log(stats);
-  })
-  .on('ready', () => {
-    console.log('[ + ] FINALLY');
-  })
-  .on('error', (err) => {
-    console.error('error on', err);
+const run = async () => {
+  const { say, spinner } = await import('@astrojs/cli-kit');
+  await say('Come on to build!', { clear: true });
+  await spinner({
+    start: 'Generating tokens css',
+    end: 'created css tokens',
+    while: () => exec(`pnpm gen:tokens`),
   });
+
+  await spinner({
+    start: 'Building components',
+    end: 'build finished',
+    while: () => exec(`pnpm unbuild`),
+  });
+};
+
+run();

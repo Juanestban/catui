@@ -1,0 +1,150 @@
+.text {
+  font-family: 'Lato', sans-serif;
+  height: fit-content;
+}
+
+/* colors */
+.text.base {
+  color: var(--catui-text-color);
+}
+
+.text.info {
+  color: var(--catui-text-color-complementary-indigo);
+}
+
+.text.success {
+  color: var(--catui-text-color-complementary-green);
+}
+
+.text.warning {
+  color: var(--catui-text-color-complementary-yellow);
+}
+
+.text.danger {
+  color: var(--catui-text-color-complementary-red);
+}
+
+.text.white {
+  color: var(--colors-white);
+}
+
+.text.black {
+  color: var(--colors-black);
+}
+
+/* sizes */
+.text.xs {
+  font-size: var(--font-size-xs);
+}
+
+.text.sm {
+  font-size: var(--font-size-sm);
+}
+
+.text.md {
+  font-size: var(--font-size-md);
+}
+
+.text.lg {
+  font-size: var(--font-size-lg);
+}
+
+.text.xlg {
+  font-size: var(--font-size-xlg);
+}
+
+.text._2xl {
+  font-size: var(--font-size-2xl);
+}
+
+.text._3xl {
+  font-size: var(--font-size-3xl);
+}
+
+.text._4xl {
+  font-size: var(--font-size-4xl);
+}
+
+.text._5xl {
+  font-size: var(--font-size-5xl);
+}
+
+.text._6xl {
+  font-size: var(--font-size-6xl);
+}
+
+/* weight */
+.text.thin {
+  font-weight: var(--font-weight-thin);
+}
+
+.text.normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.text.semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.text.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/* text-wrap */
+.text.balance {
+  text-wrap: balance;
+}
+
+.text.nowrap {
+  text-wrap: nowrap;
+}
+
+.text.pretty {
+  text-wrap: pretty;
+}
+
+.text.stable {
+  text-wrap: stable;
+}
+
+.text.wrap {
+  text-wrap: wrap;
+}
+
+/* text-decoration */
+.text.dashed {
+  text-decoration: dashed;
+}
+
+.text.dotted {
+  text-decoration: dotted;
+}
+
+.text.double {
+  text-decoration: double;
+}
+
+.text.line-through {
+  text-decoration: line-through;
+}
+
+.text.overline {
+  text-decoration: overline;
+}
+
+.text.solid {
+  text-decoration: solid;
+}
+
+.text.underline {
+  text-decoration: underline;
+}
+
+.text.wavy {
+  text-decoration: wavy;
+}
+
+.withEllipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

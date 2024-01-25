@@ -1,0 +1,170 @@
+.base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--colors-transparent);
+  border: 1px solid var(--colors-transparent);
+  border-radius: 5px;
+  padding: 7px 10px;
+  cursor: pointer;
+  min-width: fit-content;
+  min-height: 30px;
+  white-space: nowrap;
+  outline-width: 2px;
+  transition:
+    filter 500ms ease,
+    color 500ms ease,
+    background-color 500ms ease;
+}
+
+.base.normal {
+  color: var(--catui-text-color-base);
+}
+
+.base.info {
+  outline-color: var(--catui-color-outline-indigo);
+}
+
+.base.normal.info {
+  background-color: var(--catui-color-complementary-indigo);
+}
+
+.base.success {
+  outline-color: var(--catui-color-outline-green);
+}
+
+.base.normal.success {
+  background-color: var(--catui-color-complementary-green);
+}
+
+.base.warning {
+  outline-color: var(--catui-color-outline-yellow);
+}
+
+.base.normal.warning {
+  outline-color: var(--catui-color-outline-yellow);
+  background-color: var(--catui-color-complementary-yellow);
+}
+
+.base.danger {
+  outline-color: var(--catui-color-outline-red);
+}
+
+.base.normal.danger {
+  outline-color: var(--catui-color-outline-red);
+  background-color: var(--catui-color-complementary-red);
+}
+
+.base.outline.info {
+  color: var(--catui-text-color-complementary-indigo);
+  border-color: var(--catui-color-complementary-indigo);
+}
+
+.base.outline.info:hover {
+  background-color: var(--catui-color-ghost-indigo);
+}
+
+.base.outline.success {
+  color: var(--catui-text-color-complementary-green);
+  border-color: var(--catui-color-complementary-green);
+}
+
+.base.outline.success:hover {
+  background-color: var(--catui-color-ghost-green);
+}
+
+.base.outline.warning {
+  color: var(--catui-text-color-complementary-yellow);
+  border-color: var(--catui-color-complementary-yellow);
+}
+
+.base.outline.warning:hover {
+  background-color: var(--catui-color-ghost-yellow);
+}
+
+.base.outline.danger {
+  color: var(--catui-text-color-complementary-red);
+  border-color: var(--catui-color-complementary-red);
+}
+
+.base.outline.danger:hover {
+  background-color: var(--catui-color-ghost-red);
+}
+
+.base.ghost {
+  background-color: var(--colors-transparent);
+}
+
+.base.ghost.info {
+  color: var(--catui-text-color-complementary-indigo);
+}
+
+.base.ghost.info:hover {
+  background-color: var(--catui-color-ghost-indigo);
+}
+
+.base.ghost.success {
+  color: var(--catui-text-color-complementary-green);
+}
+
+.base.ghost.success:hover {
+  background-color: var(--catui-color-ghost-green);
+}
+
+.base.ghost.warning {
+  color: var(--catui-text-color-complementary-yellow);
+}
+
+.base.ghost.warning:hover {
+  background-color: var(--catui-color-ghost-yellow);
+}
+
+.base.ghost.danger {
+  color: var(--catui-text-color-complementary-red);
+}
+
+.base.ghost.danger:hover {
+  background-color: var(--catui-color-ghost-red);
+}
+
+.base.xs {
+  font-size: var(--font-size-xs);
+  height: var(--height-xs);
+}
+
+.base.sm {
+  font-size: var(--font-size-sm);
+  height: var(--height-sm);
+}
+
+.base.md {
+  font-size: var(--font-size-md);
+  height: var(--height-md);
+}
+
+.base.lg {
+  padding: 7px 17px;
+  font-size: var(--font-size-lg);
+  height: var(--height-lg);
+}
+
+.base:hover {
+  transition:
+    filter 500ms ease,
+    color 500ms ease,
+    background-color 500ms ease;
+  filter: brightness(1.1);
+}
+
+.base:active {
+  transition:
+    filter 500ms ease,
+    color 500ms ease,
+    background-color 500ms ease;
+  filter: brightness(0.9);
+}
+
+.isDisabled {
+  cursor: not-allowed;
+}

@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato/Lato-Bold.ttf');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato/Lato-Thin.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat/Montserrat-Bold.ttf');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat/Montserrat-Thin.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+.font-montserrat-title {
+  font-family: var(--font-family-montserrat);
+  font-weight: var(--font-weight-bold);
+  font-style: bold;
+}
+
+.font-montserrat-text {
+  font-family: var(--font-family-montserrat);
+  font-weight: var(--font-weight-normal);
+  font-style: normal;
+}
+
+.font-lato-title {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-bold);
+  font-style: bold;
+}
+
+.font-lato-text {
+  font-family: var(--font-family-lato);
+  font-weight: var(--font-weight-normal);
+  font-style: normal;
+}

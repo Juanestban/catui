@@ -7,3 +7,6 @@ pnpm-lock.yaml
 build.config.ts
 .eslintrc.cjs
 scripts
+packages/tokens
+lun.config.cjs
+storybook-static
