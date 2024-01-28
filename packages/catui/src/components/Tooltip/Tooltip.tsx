@@ -1,8 +1,9 @@
 import { FC, forwardRef, ReactNode } from 'react';
 import cn from 'classnames';
 
+import { PrimitiveProps } from '../../types';
+
 import s from './Tooltip.module.css';
-import { PrimitiveProps } from '@catui/types';
 
 type PrimitiveDivProps = PrimitiveProps<HTMLDivElement>;
 

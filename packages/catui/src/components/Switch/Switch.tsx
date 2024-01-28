@@ -1,7 +1,7 @@
 import { FC, ChangeEvent, forwardRef, useState, useEffect } from 'react';
 import cn from 'classnames';
 
-import { PrimitiveInputProps } from '@catui/types';
+import { PrimitiveInputProps } from '../../types';
 
 import s from './Switch.module.css';
 
@@ -14,7 +14,7 @@ interface SwitchProps
   isDisabled?: boolean;
 }
 
-const Switch = forwardRef<HTMLDivElement, SwitchProps>(
+const Switch = forwardRef<HTMLInputElement, SwitchProps>(
   ({ className, isChecked, isDisabled, onChange, ...props }, ref) => {
     const [checkbox, setCheckbox] = useState(isChecked);
 
@@ -29,7 +29,6 @@ const Switch = forwardRef<HTMLDivElement, SwitchProps>(
 
     return (
       <div
-        ref={ref}
         className={cn(
           s.switch,
           checkbox ? s.checked : s.unchecked,
@@ -39,6 +38,7 @@ const Switch = forwardRef<HTMLDivElement, SwitchProps>(
       >
         <span className={cn(s.circle, checkbox && s.checked, isDisabled && s.isDisabled)} />
         <input
+          ref={ref}
           type="checkbox"
           className={cn(s.checkbox, isDisabled && s.isDisabled)}
           checked={checkbox}
