@@ -41,6 +41,29 @@ body[data-theme='light'] {
   --catui-switch-bg-color-disabled: var(--colors-switch-bg-disabled);
 
   --catui-spinner-primary: var(--colors-spinner-primary);
+
+  --catui-badge-normal-info: var(--colors-indigo-600);
+  --catui-badge-normal-success: var(--colors-green-600);
+  --catui-badge-normal-warning: var(--colors-yellow-600);
+  --catui-badge-normal-danger: var(--colors-red-600);
+
+  --catui-badge-outline-info-color: var(--colors-indigo-600);
+  --catui-badge-outline-info-border-color: var(--colors-indigo-600);
+  --catui-badge-outline-success-color: var(--colors-green-600);
+  --catui-badge-outline-success-border-color: var(--colors-green-600);
+  --catui-badge-outline-warning-color: var(--colors-yellow-600);
+  --catui-badge-outline-warning-border-color: var(--colors-yellow-600);
+  --catui-badge-outline-danger-color: var(--colors-red-600);
+  --catui-badge-outline-danger-border-color: var(--colors-red-600);
+
+  --catui-badge-subtitle-info-color: var(--colors-indigo-800);
+  --catui-badge-subtitle-info-bg-color: var(--colors-indigo-300);
+  --catui-badge-subtitle-success-color: var(--colors-green-800);
+  --catui-badge-subtitle-success-bg-color: var(--colors-green-300);
+  --catui-badge-subtitle-warning-color: var(--colors-yellow-800);
+  --catui-badge-subtitle-warning-bg-color: var(--colors-yellow-300);
+  --catui-badge-subtitle-danger-color: var(--colors-red-800);
+  --catui-badge-subtitle-danger-bg-color: var(--colors-red-300);
 }
 
 body[data-theme='dark'] {
@@ -86,4 +109,27 @@ body[data-theme='dark'] {
   --catui-switch-bg-color-disabled: var(--colors-switch-bg-disabled-dark);
 
   --catui-spinner-primary: var(--colors-spinner-primary-dark);
+
+  --catui-badge-normal-info: var(--colors-indigo-700);
+  --catui-badge-normal-success: var(--colors-green-700);
+  --catui-badge-normal-warning: var(--colors-yellow-700);
+  --catui-badge-normal-danger: var(--colors-red-700);
+
+  --catui-badge-outline-info-color: var(--colors-indigo-700);
+  --catui-badge-outline-info-border-color: var(--colors-indigo-700);
+  --catui-badge-outline-success-color: var(--colors-green-700);
+  --catui-badge-outline-success-border-color: var(--colors-green-700);
+  --catui-badge-outline-warning-color: var(--colors-yellow-700);
+  --catui-badge-outline-warning-border-color: var(--colors-yellow-700);
+  --catui-badge-outline-danger-color: var(--colors-red-700);
+  --catui-badge-outline-danger-border-color: var(--colors-red-700);
+
+  --catui-badge-subtitle-info-color: var(--colors-indigo-300);
+  --catui-badge-subtitle-info-bg-color: var(--colors-indigo-800);
+  --catui-badge-subtitle-success-color: var(--colors-green-300);
+  --catui-badge-subtitle-success-bg-color: var(--colors-green-800);
+  --catui-badge-subtitle-warning-color: var(--colors-yellow-300);
+  --catui-badge-subtitle-warning-bg-color: var(--colors-yellow-800);
+  --catui-badge-subtitle-danger-color: var(--colors-red-300);
+  --catui-badge-subtitle-danger-bg-color: var(--colors-red-800);
 }

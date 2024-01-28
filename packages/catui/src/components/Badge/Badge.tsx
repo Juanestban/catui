@@ -2,27 +2,23 @@ import { FC, forwardRef } from 'react';
 import cn from 'classnames';
 
 import { VariantBadge, PrimitiveProps, Role } from '../../types';
-import { Text } from '../Text';
 
 import s from './Badge.module.css';
 
-interface BadgeProps extends PrimitiveProps<HTMLDivElement> {
-  variant?: VariantBadge;
+interface BadgeProps extends PrimitiveProps<HTMLSpanElement> {
   color?: Role;
+  variant?: VariantBadge;
   fontSize?: number | string;
 }
 
-const Badge = forwardRef<HTMLDivElement, BadgeProps>(
-  (
-    { className, variant = 'normal', color = 'success', fontSize = 10, children, ...props },
-    ref,
-  ) => {
+const Badge = forwardRef<HTMLSpanElement, BadgeProps>(
+  ({ className, variant = 'normal', color = 'info', fontSize = 14, children, ...props }, ref) => {
     return (
-      <div ref={ref} className={cn(s.container, s[variant], s[color], className)} {...props}>
-        <Text fontWeight="bold" style={{ fontSize }}>
+      <span ref={ref} className={cn(s.container, s[variant], s[color], className)} {...props}>
+        <p className={s.heading} style={{ fontSize }}>
           {children}
-        </Text>
-      </div>
+        </p>
+      </span>
     );
   },
 ) as FC<BadgeProps>;

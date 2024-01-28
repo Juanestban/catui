@@ -1,3 +1,78 @@
 .container {
-  border: 1px solid #09f;
+  display: inline-flex;
+  padding: 0px 5px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  font-family: 'Lato', sans-serif;
+}
+
+.container.normal {
+  color: var(--colors-white);
+}
+
+.container.normal.info {
+  background-color: var(--catui-badge-normal-info);
+}
+
+.container.normal.success {
+  background-color: var(--catui-badge-normal-success);
+}
+
+.container.normal.warning {
+  background-color: var(--catui-badge-normal-warning);
+}
+
+.container.normal.danger {
+  background-color: var(--catui-badge-normal-danger);
+}
+
+.container.outline {
+  background-color: var(--colors-transparent);
+}
+
+.container.outline.info {
+  color: var(--catui-badge-outline-info-color);
+  border-color: var(--catui-badge-outline-info-border-color);
+}
+
+.container.outline.success {
+  color: var(--catui-badge-outline-success-color);
+  border-color: var(--catui-badge-outline-success-border-color);
+}
+
+.container.outline.warning {
+  color: var(--catui-badge-outline-warning-color);
+  border-color: var(--catui-badge-outline-warning-border-color);
+}
+
+.container.outline.danger {
+  color: var(--catui-badge-outline-danger-color);
+  border-color: var(--catui-badge-outline-danger-border-color);
+}
+
+.container.subtitle.info {
+  color: var(--catui-badge-subtitle-info-color);
+  background-color: var(--catui-badge-subtitle-info-bg-color);
+}
+
+.container.subtitle.success {
+  color: var(--catui-badge-subtitle-success-color);
+  background-color: var(--catui-badge-subtitle-success-bg-color);
+}
+
+.container.subtitle.warning {
+  color: var(--catui-badge-subtitle-warning-color);
+  background-color: var(--catui-badge-subtitle-warning-bg-color);
+}
+
+.container.subtitle.danger {
+  color: var(--catui-badge-subtitle-danger-color);
+  background-color: var(--catui-badge-subtitle-danger-bg-color);
 }
