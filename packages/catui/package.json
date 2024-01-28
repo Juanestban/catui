@@ -29,7 +29,8 @@
       "import": "./build/index.mjs",
       "require": "./build/index.js"
     },
-    "./styles/*": "./build/styles/*"
+    "./styles/*": "./build/styles/*",
+    "./hooks": "./build/hooks/index.mjs"
   },
   "files": [
     "build"

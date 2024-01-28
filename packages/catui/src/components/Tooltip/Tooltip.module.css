@@ -1,0 +1,164 @@
+.container {
+  position: relative;
+  display: inline-flex;
+}
+
+.content {
+  position: absolute;
+  width: max-content;
+  padding: 5px 10px;
+  display: inline-flex;
+  color: var(--colors-white);
+  background-color: var(--colors-tooltip-bg);
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    opacity 200ms ease,
+    visibility 200ms ease;
+
+  z-index: 1;
+}
+
+.children:hover + .content {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 200ms ease,
+    visibility 200ms ease;
+}
+
+.content.left-start {
+  top: 0;
+  right: 110%;
+}
+
+.content.left {
+  right: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content.left-end {
+  right: 110%;
+  bottom: 0;
+}
+
+.content.top-start {
+  bottom: 125%;
+  left: 0;
+}
+
+.content.top {
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content.top-end {
+  bottom: 125%;
+  right: 0;
+}
+
+.content.right-start {
+  top: 0;
+  left: 110%;
+}
+
+.content.right {
+  left: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content.right-end {
+  left: 110%;
+  bottom: 0;
+}
+
+.content.bottom-start {
+  left: 0;
+  top: 125%;
+}
+
+.content.bottom {
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content.bottom-end {
+  right: 0;
+  top: 125%;
+}
+
+/* arrow */
+
+.contentArrow {
+  position: relative;
+}
+
+.contentArrow.hasArrow::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: var(--colors-tooltip-bg);
+}
+
+.contentArrow.hasArrow.left-start::before,
+.contentArrow.hasArrow.left::before,
+.contentArrow.hasArrow.left-end::before {
+  top: 50%;
+  right: -10px;
+  transform: rotate(45deg) translateY(-50%);
+  background-color: var(--colors-tooltip-bg);
+}
+
+.contentArrow.hasArrow.right-start::before,
+.contentArrow.hasArrow.right::before,
+.contentArrow.hasArrow.right-end::before {
+  top: 50%;
+  left: -18px;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+.contentArrow.hasArrow.top-start::before {
+  bottom: -10px;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.contentArrow.hasArrow.top::before {
+  bottom: -13px;
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+}
+
+.contentArrow.hasArrow.top-end::before {
+  bottom: -10px;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+.contentArrow.hasArrow.bottom-start::before {
+  top: -10px;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.contentArrow.hasArrow.bottom::before {
+  top: -7px;
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+}
+
+.contentArrow.hasArrow.bottom-end::before {
+  top: -10px;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+.isDisabled {
+  display: none;
+}

@@ -293,6 +293,8 @@
   --colors-spinner-primary: linear-gradient(45deg, #87cefa, #4169e1);
   --colors-spinner-primary-dark: linear-gradient(45deg, #87cefa, #4169e1);
 
+  --colors-tooltip-bg: rgb(25, 26, 27);
+
   --height-xs: 1.5rem;
   --height-sm: 2rem;
   --height-md: 2.5rem;

@@ -352,6 +352,10 @@ const decisions = {
       primary: 'linear-gradient(45deg, #87cefa, #4169e1)',
       primaryDark: 'linear-gradient(45deg, #87cefa, #4169e1)',
     },
+
+    tooltip: {
+      bg: 'rgb(25, 26, 27)',
+    },
   },
 
   height: {

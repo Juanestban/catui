@@ -32,6 +32,12 @@ export default defineBuildConfig({
       outDir: './build/types',
       cleanDist: true,
     },
+    {
+      builder: 'mkdist',
+      input: './src/hooks/',
+      outDir: './build/hooks',
+      cleanDist: true,
+    },
   ],
   rollup: {
     cjsBridge: true,
