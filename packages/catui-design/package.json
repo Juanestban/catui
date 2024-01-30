@@ -1,8 +1,9 @@
 {
   "name": "catui-design",
-  "version": "0.14.4",
+  "version": "0.14.6",
   "type": "module",
   "description": "UI Design System CatUI",
+  "main": "build/index.mjs",
   "types": "build/index.d.ts",
   "scripts": {
     "dev:web": "vite",

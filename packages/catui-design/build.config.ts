@@ -1,4 +1,3 @@
-import path from 'node:path';
 import { defineBuildConfig } from 'unbuild';
 
 export default defineBuildConfig({
@@ -13,7 +12,14 @@ export default defineBuildConfig({
         jsx: 'automatic',
       },
     },
-    './src/index.ts',
+    {
+      input: './src/index.ts',
+      outDir: './build',
+      cleanDist: true,
+      esbuild: {
+        jsx: 'automatic',
+      },
+    },
     {
       builder: 'mkdist',
       input: './src/styles/',
@@ -44,4 +50,10 @@ export default defineBuildConfig({
   declaration: true,
   sourcemap: true,
   failOnWarn: false,
+  rollup: {
+    esbuild: {
+      jsx: 'automatic',
+      jsxImportSource: 'react',
+    },
+  },
 });

@@ -3,7 +3,7 @@ title: Example Guide
 description: A guide in my new Starlight docs site.
 ---
 
-import { Button } from 'catui-design';
+import { CatuiTheme, Button } from 'catui-design';
 
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
 Writing a good guide requires thinking about what your users are trying to do.
@@ -16,13 +16,15 @@ Writing a good guide requires thinking about what your users are trying to do.
 
 component =>
 
-```tsx
+<CatuiTheme>
+  <Button role="danger" variant="ghost">
+    Testing Button
+  </Button>
+</CatuiTheme>
+
+```jsx
 // Example Usage
 const Component = () => {
-  return <Button client:only>Testing Button</Button>;
+  return <Button>Testing Button</Button>;
 };
 ```
-
-<Button role="danger" variant="ghost" client:only>
-  Testing Button
-</Button>

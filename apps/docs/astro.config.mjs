@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import {} from '@astrojs/starlight/components';
 
 import react from '@astrojs/react';
 
