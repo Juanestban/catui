@@ -65,9 +65,9 @@ importers:
       astro:
         specifier: ^4.0.1
         version: 4.0.1(typescript@5.3.3)
-      catui:
+      catui-design:
         specifier: workspace:*
-        version: link:../../packages/catui
+        version: link:../../packages/catui-design
       react:
         specifier: ^18.0.0
         version: 18.2.0
@@ -81,7 +81,7 @@ importers:
         specifier: 5.3.3
         version: 5.3.3
 
-  packages/catui:
+  packages/catui-design:
     dependencies:
       classnames:
         specifier: 2.5.1
@@ -3388,7 +3388,7 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@storybook/telemetry': 7.6.8
+      '@storybook/telemetry': 7.6.10
       react: 18.2.0
       react-confetti: 6.1.0(react@18.2.0)
       react-dom: 18.2.0(react@18.2.0)
@@ -4142,22 +4142,6 @@ packages:
       '@storybook/client-logger': 7.6.10
       '@storybook/core-common': 7.6.10
       '@storybook/csf-tools': 7.6.10
-      chalk: 4.1.2
-      detect-package-manager: 2.0.1
-      fetch-retry: 5.0.6
-      fs-extra: 11.2.0
-      read-pkg-up: 7.0.1
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-    dev: true
-
-  /@storybook/telemetry@7.6.8:
-    resolution: {integrity: sha512-hHUS3fyHjKR3ZdbG+/OVI+pwXXKOmS8L8GMuWKlpUovvCYBLm0/Q0MUQ9XaLuByOCzvAurqB3Owp3ZV7GiY30Q==}
-    dependencies:
-      '@storybook/client-logger': 7.6.8
-      '@storybook/core-common': 7.6.8
-      '@storybook/csf-tools': 7.6.8
       chalk: 4.1.2
       detect-package-manager: 2.0.1
       fetch-retry: 5.0.6
