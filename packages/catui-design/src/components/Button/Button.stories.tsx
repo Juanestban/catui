@@ -1,6 +1,6 @@
 import type { Meta, StoryFn } from '@storybook/react';
 
-import { Button, ButtonProps } from '../Button';
+import { Button, ButtonProps } from '.';
 import { Wrapper } from '../../ui/Wrapper';
 
 type Variant = ButtonProps['variant'];

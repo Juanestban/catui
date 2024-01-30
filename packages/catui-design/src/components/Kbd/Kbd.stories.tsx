@@ -1,7 +1,7 @@
 import { Meta, StoryFn } from '@storybook/react';
 
 import { Text } from '../Text';
-import { Kbd, KbdProps } from '../Kbd';
+import { Kbd, KbdProps } from '.';
 
 const meta = {
   title: 'Cat-UI/Kbd',

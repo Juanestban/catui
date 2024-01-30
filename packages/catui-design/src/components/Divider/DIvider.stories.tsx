@@ -1,6 +1,6 @@
 import type { Meta, StoryFn } from '@storybook/react';
 
-import { Divider, DividerProps } from '../Divider';
+import { Divider, DividerProps } from '.';
 
 const meta = {
   title: 'Cat-UI/Divider',

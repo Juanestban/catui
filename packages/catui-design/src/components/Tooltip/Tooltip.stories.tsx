@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
 
-import { Tooltip, TooltipProps } from '../Tooltip';
+import { Tooltip, TooltipProps } from '.';
 import { Text } from '../Text';
 import { Button } from '../Button';
 import { Wrapper } from '../../ui/Wrapper';

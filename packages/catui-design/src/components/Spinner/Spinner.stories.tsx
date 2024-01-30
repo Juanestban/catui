@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
 
-import { Spinner, SpinnerProps } from '../Spinner';
+import { Spinner, SpinnerProps } from '.';
 
 const meta = {
   title: 'Cat-UI/Spinner',

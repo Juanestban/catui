@@ -1,6 +1,6 @@
 import type { Meta, StoryFn } from '@storybook/react';
 
-import { Badge, BadgeProps } from '../Badge';
+import { Badge, BadgeProps } from '.';
 import { Wrapper } from '../../ui/Wrapper';
 
 type Variant = BadgeProps['variant'];

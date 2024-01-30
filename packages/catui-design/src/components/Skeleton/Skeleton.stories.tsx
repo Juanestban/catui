@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
 
-import { Skeleton, SkeletonProps } from '../Skeleton';
+import { Skeleton, SkeletonProps } from '.';
 import { Button } from '../Button';
 
 const meta = {

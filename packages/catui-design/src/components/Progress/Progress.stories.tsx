@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
 
-import { Progress, ProgressProps } from '../Progress';
+import { Progress, ProgressProps } from '.';
 import { Wrapper } from '../../ui/Wrapper';
 
 const meta = {
