@@ -57,10 +57,10 @@ importers:
         specifier: ^0.15.3
         version: 0.15.3(astro@4.0.1)
       '@types/react':
-        specifier: ^18.0.21
+        specifier: ^18.2.43
         version: 18.2.43
       '@types/react-dom':
-        specifier: ^18.0.6
+        specifier: ^18.2.17
         version: 18.2.17
       astro:
         specifier: ^4.0.1
@@ -69,10 +69,10 @@ importers:
         specifier: workspace:*
         version: link:../../packages/catui-design
       react:
-        specifier: ^18.0.0
+        specifier: ^18.2.0
         version: 18.2.0
       react-dom:
-        specifier: ^18.0.0
+        specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       sharp:
         specifier: ^0.32.5

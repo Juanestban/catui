@@ -9,7 +9,7 @@ export default defineConfig({
     starlight({
       title: '🐱‍🚀 Cat-UI',
       social: {
-        github: 'https://github.com/withastro/starlight',
+        github: 'https://github.com/Juanestban/catui',
       },
       sidebar: [
         {
