@@ -39,9 +39,6 @@ export default defineBuildConfig({
       cleanDist: true,
     },
   ],
-  rollup: {
-    cjsBridge: true,
-  },
   clean: true,
   outDir: 'build',
   declaration: true,

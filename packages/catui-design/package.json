@@ -1,10 +1,8 @@
 {
   "name": "catui-design",
-  "version": "0.14.2",
+  "version": "0.14.4",
   "type": "module",
   "description": "UI Design System CatUI",
-  "main": "build/index.js",
-  "module": "build/index.mjs",
   "types": "build/index.d.ts",
   "scripts": {
     "dev:web": "vite",
@@ -27,7 +25,7 @@
   "exports": {
     ".": {
       "types": "./build/index.d.ts",
-      "import": "./build/index.mjs"
+      "default": "./build/index.mjs"
     },
     "./styles/*": "./build/styles/*",
     "./hooks": "./build/hooks/index.mjs"

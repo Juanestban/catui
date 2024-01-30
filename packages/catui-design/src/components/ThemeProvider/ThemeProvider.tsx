@@ -10,12 +10,8 @@ interface ThemeProviderProps extends PropsWithChildren {
   theme?: Theme;
 }
 
-const themeMachine: Theme = window.matchMedia('(prefers-color-scheme: dark)').matches
-  ? 'dark'
-  : 'light';
-
 const ThemeContext = createContext<{ theme?: Theme; handleTheme: () => void }>({
-  theme: themeMachine,
+  theme: 'light',
   handleTheme: () => {},
 });
 
@@ -23,9 +19,16 @@ const KEY_LOCAL_STORAGE_THEME = '@THEME_PROVIDER_CAT_UI';
 
 function ThemeProvider({ children }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
-    const item = localStorage.getItem(KEY_LOCAL_STORAGE_THEME);
+    try {
+      const item = localStorage.getItem(KEY_LOCAL_STORAGE_THEME);
+      const themeMachine = window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light';
 
-    return item === null ? themeMachine : (item as Theme);
+      return item === null ? themeMachine : (item as Theme);
+    } catch {
+      return 'light';
+    }
   });
 
   const handleTheme = () => {
