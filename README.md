@@ -5,15 +5,15 @@
 tutorial
 
 ```bash
-npx install catui
+npx install catui-design
 ```
 
 ```bash
-yarn add catui
+yarn add catui-design
 ```
 
 ```bash
-pnpm add catui
+pnpm add catui-design
 ```
 
 ## Storybook
