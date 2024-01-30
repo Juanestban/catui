@@ -20,6 +20,50 @@ body[data-theme='light'] {
   --catui-color-ghost-green: var(--colors-ghost-success);
   --catui-color-ghost-yellow: var(--colors-ghost-warning);
   --catui-color-ghost-red: var(--colors-ghost-danger);
+
+  --catui-kbd-background-color: var(--colors-kbd);
+
+  --catui-progress-bg: var(--colors-progress-bg);
+
+  --catui-progress-info: var(--colors-progress-info);
+  --catui-progress-success: var(--colors-progress-success);
+  --catui-progress-warning: var(--colors-progress-warning);
+  --catui-progress-danger: var(--colors-progress-danger);
+
+  --catui-skeleton-bg-from: var(--colors-skeleton-from);
+  --catui-skeleton-bg-to: var(--colors-skeleton-to);
+
+  --catui-switch-color: var(--colors-switch-base);
+  --catui-switch-bg-color: var(--colors-switch-bg);
+  --catui-switch-bg-color-checked: var(--colors-switch-bg-checked);
+
+  --catui-switch-color-disabled: var(--colors-switch-base-disabled);
+  --catui-switch-bg-color-disabled: var(--colors-switch-bg-disabled);
+
+  --catui-spinner-primary: var(--colors-spinner-primary);
+
+  --catui-badge-normal-info: var(--colors-indigo-600);
+  --catui-badge-normal-success: var(--colors-green-600);
+  --catui-badge-normal-warning: var(--colors-yellow-600);
+  --catui-badge-normal-danger: var(--colors-red-600);
+
+  --catui-badge-outline-info-color: var(--colors-indigo-600);
+  --catui-badge-outline-info-border-color: var(--colors-indigo-600);
+  --catui-badge-outline-success-color: var(--colors-green-600);
+  --catui-badge-outline-success-border-color: var(--colors-green-600);
+  --catui-badge-outline-warning-color: var(--colors-yellow-600);
+  --catui-badge-outline-warning-border-color: var(--colors-yellow-600);
+  --catui-badge-outline-danger-color: var(--colors-red-600);
+  --catui-badge-outline-danger-border-color: var(--colors-red-600);
+
+  --catui-badge-subtitle-info-color: var(--colors-indigo-800);
+  --catui-badge-subtitle-info-bg-color: var(--colors-indigo-300);
+  --catui-badge-subtitle-success-color: var(--colors-green-800);
+  --catui-badge-subtitle-success-bg-color: var(--colors-green-300);
+  --catui-badge-subtitle-warning-color: var(--colors-yellow-800);
+  --catui-badge-subtitle-warning-bg-color: var(--colors-yellow-300);
+  --catui-badge-subtitle-danger-color: var(--colors-red-800);
+  --catui-badge-subtitle-danger-bg-color: var(--colors-red-300);
 }
 
 body[data-theme='dark'] {
@@ -44,4 +88,48 @@ body[data-theme='dark'] {
   --catui-color-ghost-green: var(--colors-ghost-success-dark);
   --catui-color-ghost-yellow: var(--colors-ghost-warning-dark);
   --catui-color-ghost-red: var(--colors-ghost-danger-dark);
+
+  --catui-kbd-background-color: var(--colors-kbd-dark);
+
+  --catui-progress-bg: var(--colors-progress-bg-dark);
+
+  --catui-progress-info: var(--colors-progress-info-dark);
+  --catui-progress-success: var(--colors-progress-success-dark);
+  --catui-progress-warning: var(--colors-progress-warning-dark);
+  --catui-progress-danger: var(--colors-progress-danger-dark);
+
+  --catui-skeleton-bg-from: var(--colors-skeleton-from);
+  --catui-skeleton-bg-to: var(--colors-skeleton-to);
+
+  --catui-switch-color: var(--colors-switch-base-dark);
+  --catui-switch-bg-color: var(--colors-switch-bg-dark);
+  --catui-switch-bg-color-checked: var(--colors-switch-bg-checked-dark);
+
+  --catui-switch-color-disabled: var(--colors-switch-base-disabled-dark);
+  --catui-switch-bg-color-disabled: var(--colors-switch-bg-disabled-dark);
+
+  --catui-spinner-primary: var(--colors-spinner-primary-dark);
+
+  --catui-badge-normal-info: var(--colors-indigo-700);
+  --catui-badge-normal-success: var(--colors-green-700);
+  --catui-badge-normal-warning: var(--colors-yellow-700);
+  --catui-badge-normal-danger: var(--colors-red-700);
+
+  --catui-badge-outline-info-color: var(--colors-indigo-700);
+  --catui-badge-outline-info-border-color: var(--colors-indigo-700);
+  --catui-badge-outline-success-color: var(--colors-green-700);
+  --catui-badge-outline-success-border-color: var(--colors-green-700);
+  --catui-badge-outline-warning-color: var(--colors-yellow-700);
+  --catui-badge-outline-warning-border-color: var(--colors-yellow-700);
+  --catui-badge-outline-danger-color: var(--colors-red-700);
+  --catui-badge-outline-danger-border-color: var(--colors-red-700);
+
+  --catui-badge-subtitle-info-color: var(--colors-indigo-300);
+  --catui-badge-subtitle-info-bg-color: var(--colors-indigo-800);
+  --catui-badge-subtitle-success-color: var(--colors-green-300);
+  --catui-badge-subtitle-success-bg-color: var(--colors-green-800);
+  --catui-badge-subtitle-warning-color: var(--colors-yellow-300);
+  --catui-badge-subtitle-warning-bg-color: var(--colors-yellow-800);
+  --catui-badge-subtitle-danger-color: var(--colors-red-300);
+  --catui-badge-subtitle-danger-bg-color: var(--colors-red-800);
 }

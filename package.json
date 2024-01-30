@@ -10,8 +10,16 @@
   "bugs": "https://github.com/Juanestban/catui/issues",
   "scripts": {
     "prepare": "husky install",
+    "predev:docs": "pnpm --filter docs predev",
     "dev:docs": "pnpm --filter docs dev",
-    "dev:story": "pnpm --filter storybook storybook",
+    "start:docs": "pnpm --filter docs start",
+    "preview:docs": "pnpm --filter docs preview",
+    "dev:stories": "pnpm --filter catui dev:stories",
+    "gen:tokens": "pnpm --filter catui gen:tokens",
+    "build:components": "pnpm --filter catui build:components",
+    "build:storybook": "pnpm --filter catui build:storybook",
+    "build:web": "pnpm --filter catui build:web",
+    "build:docs": "pnpm --filter docs build",
     "lint": "eslint --fix --cache . && pnpm prettier --check --write --cache ."
   },
   "keywords": [],

@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skeleton {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: shimmer 1s linear infinite alternate;
+}
+
+.container.round {
+  border-radius: 50%;
+}
+
+@keyframes shimmer {
+  from {
+    background-color: var(--catui-skeleton-bg-from);
+  }
+  to {
+    background-color: var(--catui-skeleton-bg-to);
+  }
+}

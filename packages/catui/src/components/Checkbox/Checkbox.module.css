@@ -1,0 +1,83 @@
+.container {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  user-select: none;
+  transition:
+    border-color 500ms ease,
+    color 500ms ease;
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--colors-gray-900);
+  border-radius: 4px;
+  background-color: var(--colors-transparent);
+  transition:
+    border-color 500ms ease,
+    background-color 500ms ease;
+}
+
+.checkbox.checked {
+  border-color: var(--colors-green-600);
+  background-color: var(--colors-green-600);
+  transition:
+    border-color 500ms ease,
+    background-color 500ms ease;
+}
+
+.checkbox.isIndeterminate {
+  border-color: var(--colors-gray-800);
+  background-color: var(--colors-gray-800);
+  transition:
+    border-color 500ms ease,
+    background-color 500ms ease;
+}
+
+.check {
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    opacity 500ms ease,
+    visibility 500ms ease,
+    border-color 500ms ease;
+}
+
+.check.checked,
+.check.isIndeterminate {
+  visibility: visible;
+  opacity: 1;
+  transition:
+    opacity 500ms ease,
+    visibility 500ms ease,
+    border-color 500ms ease;
+}
+
+.isDisabled {
+  cursor: not-allowed;
+  border-color: var(--colors-gray-400);
+  color: var(--colors-gray-400);
+  transition:
+    border-color 500ms ease,
+    color 500ms ease;
+}
+
+.checkbox.isDisabled {
+  background-color: var(--colors-gray-300);
+  border-color: var(--colors-gray-300);
+}

@@ -1,5 +1,5 @@
 .heading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-family-montserrat);
   height: fit-content;
 }
 

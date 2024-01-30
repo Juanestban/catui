@@ -1,11 +1,11 @@
-import { FC, DetailedHTMLProps, HTMLAttributes, forwardRef, createElement } from 'react';
+import { FC, forwardRef, createElement } from 'react';
 import cn from 'classnames';
 
-import { FontSize, Role } from '../../types';
+import { FontSize, PrimitiveProps, Role } from '../../types';
 
 import s from './Text.module.css';
 
-type PrimitiveText = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
+type PrimitiveText = PrimitiveProps<HTMLElement>;
 
 interface TextProps extends Omit<PrimitiveText, 'color'> {
   as?:

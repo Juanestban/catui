@@ -1,12 +1,11 @@
-import { FC, DetailedHTMLProps, HTMLAttributes, forwardRef, createElement } from 'react';
+import { FC, forwardRef, createElement } from 'react';
 import cn from 'classnames';
 
-import { FontSize, Role } from '../../types';
+import { FontSize, Role, PrimitiveProps } from '../../types';
 
 import s from './Heading.module.css';
 
-interface HeadingProps
-  extends DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement> {
+interface HeadingProps extends PrimitiveProps<HTMLHeadingElement> {
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   fontSize?: Exclude<FontSize, '6xl' | '5xl'>;
   fontWeight?: 'thin' | 'normal' | 'semibold' | 'bold';

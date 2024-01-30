@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-flex;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--catui-progress-bg);
+  border-color: var(--catui-progress-bg);
+}
+
+.progress {
+  display: block;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.progress.info {
+  background-color: var(--catui-progress-info);
+}
+
+.progress.success {
+  background-color: var(--catui-progress-success);
+}
+
+.progress.warning {
+  background-color: var(--catui-progress-warning);
+}
+
+.progress.danger {
+  background-color: var(--catui-progress-danger);
+}
+
+.text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
