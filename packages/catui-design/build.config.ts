@@ -18,6 +18,7 @@ export default defineBuildConfig({
       cleanDist: true,
       esbuild: {
         jsx: 'automatic',
+        jsxImportSource: 'react',
       },
     },
     {

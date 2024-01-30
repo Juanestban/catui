@@ -1,7 +1,5 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import {} from '@astrojs/starlight/components';
-
 import react from '@astrojs/react';
 
 // https://astro.build/config
@@ -12,6 +10,7 @@ export default defineConfig({
       title: '🐱‍🚀 Cat-UI',
       social: {
         github: 'https://github.com/Juanestban/catui',
+        twitter: 'https://twitter.com/juanestbandev',
       },
       sidebar: [
         {
