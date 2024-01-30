@@ -1,6 +1,6 @@
 {
   "name": "catui-design",
-  "version": "0.14.0",
+  "version": "0.14.1",
   "type": "module",
   "description": "UI Design System CatUI",
   "main": "build/index.js",
