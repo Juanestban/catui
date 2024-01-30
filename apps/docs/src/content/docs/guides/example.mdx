@@ -19,10 +19,10 @@ component =>
 ```tsx
 // Example Usage
 const Component = () => {
-  return <Button>Testing Button</Button>;
+  return <Button client:only>Testing Button</Button>;
 };
 ```
 
-<Button role="danger" variant="ghost" client:only="react">
+<Button role="danger" variant="ghost" client:only>
   Testing Button
 </Button>

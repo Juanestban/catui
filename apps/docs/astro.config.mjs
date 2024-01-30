@@ -6,6 +6,7 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   integrations: [
+    react(),
     starlight({
       title: '🐱‍🚀 Cat-UI',
       social: {
@@ -30,6 +31,5 @@ export default defineConfig({
         },
       ],
     }),
-    react(),
   ],
 });
