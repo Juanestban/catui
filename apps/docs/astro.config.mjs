@@ -7,24 +7,58 @@ export default defineConfig({
   integrations: [
     react(),
     starlight({
-      title: '🐱‍🚀 Cat-UI',
+      title: '🐱‍🚀 Cat-UI Docs',
       social: {
         github: 'https://github.com/Juanestban/catui',
         twitter: 'https://twitter.com/juanestbandev',
       },
+      defaultLocale: 'en',
+      locales: {
+        en: {
+          label: 'English',
+        },
+        es: {
+          label: 'Español',
+        },
+      },
+      favicon: '/catui-v2.png',
       sidebar: [
         {
+          label: 'Getting Started',
+          translations: {
+            en: 'Getting Started',
+            es: 'empezando',
+          },
+          autogenerate: {
+            directory: 'getting-started',
+          },
+        },
+        {
+          label: 'Components',
+          translations: {
+            en: 'Components',
+            es: 'Componentes',
+          },
+          autogenerate: {
+            directory: 'components',
+          },
+        },
+        {
           label: 'Guides',
-          items: [
-            // Each item here is one entry in the navigation menu.
-            {
-              label: 'Example Guide',
-              link: '/guides/example/',
-            },
-          ],
+          translations: {
+            en: 'Guides',
+            es: 'Guias',
+          },
+          autogenerate: {
+            directory: 'guides',
+          },
         },
         {
           label: 'Reference',
+          translations: {
+            en: 'Reference',
+            es: 'Referencia',
+          },
           autogenerate: {
             directory: 'reference',
           },

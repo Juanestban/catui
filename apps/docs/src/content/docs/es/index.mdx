@@ -1,0 +1,36 @@
+---
+title: Bienvenidos a Cat-UI Design System
+description: Empecemos a construir las docs con Starlight de Cat-UI.
+template: splash
+hero:
+  tagline: Vamos a ver al proyecto Gatuno 🐱‍🏍!
+  image:
+    file: ../../../assets/catui-preview.png
+  actions:
+    - text: Documentación
+      link: /es/guides/example/
+      icon: right-arrow
+      variant: primary
+    - text: Vamos a ver el Storybook
+      link: https://catui-storybook.vercel.app/
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Next steps
+
+<CardGrid stagger>
+  <Card title="Actualizar contenido" icon="pencil">
+    Editar `src/content/docs/index.mdx` para ver estos cambios.
+  </Card>
+  <Card title="Añadir nuevo contenido" icon="add-document">
+    Añadir Markdown o archivos MDX al `src/content/docs` para crear una nueva pagina.
+  </Card>
+  <Card title="Tu Configuración" icon="setting">
+    editar tu `sidebar` otras configuraciones en `astro.config.mjs`.
+  </Card>
+  <Card title="Leer la documentación" icon="open-book">
+    Leer mas en [La Cat-UI Documentación](https://starlight.astro.build/).
+  </Card>
+</CardGrid>

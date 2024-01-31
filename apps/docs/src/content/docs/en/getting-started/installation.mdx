@@ -1,0 +1,90 @@
+---
+title: Installation
+description: docs for installation cat-ui design system
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Quick start
+
+install package with **npm**, **yarn** and **pnpm**
+
+<Tabs>
+<TabItem label="npx">
+
+```sh
+npx install catui-design
+```
+
+</TabItem>
+<TabItem label="yarn">
+
+```sh
+yarn add catui-design
+```
+
+</TabItem>
+<TabItem label="pnpm">
+
+```sh
+pnpm add catui-design
+```
+
+</TabItem>
+</Tabs>
+
+## Use Wrapper provider CatUI
+
+for use it correctly with the tokens that be using on this library, you will need use `CatuiTheme`
+
+<Tabs>
+<TabItem label="typescript">
+<img src="https://skillicons.dev/icons?i=ts" alt="typescript" />
+
+`src/root.tsx`
+
+```tsx
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom/client';
+import { CatuiTheme } from 'catui-design';
+
+import App from './App';
+
+import './index.css';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <CatuiTheme>
+      <App />
+    </CatuiTheme>
+  </StrictMode>,
+);
+```
+
+</TabItem>
+<TabItem label="javascript">
+<img src="https://skillicons.dev/icons?i=js" alt="javascript" />
+`src/root.jsx`
+```jsx
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom/client';
+import { CatuiTheme } from 'catui-design'
+
+import App from './App';
+
+import './index.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+
+{' '}
+<StrictMode>
+  <CatuiTheme>
+    <App />
+  </CatuiTheme>
+</StrictMode>, );
+
+```
+
+</TabItem>
+</Tabs>
+```
