@@ -7,7 +7,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## Quick start
 
-install package with **npm**, **yarn** and **pnpm**
+Install package with **npm**, **yarn** and **pnpm**
 
 <Tabs>
 <TabItem label="npx">
@@ -64,7 +64,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 </TabItem>
 <TabItem label="javascript">
 <img src="https://skillicons.dev/icons?i=js" alt="javascript" />
+
 `src/root.jsx`
+
 ```jsx
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
@@ -75,16 +77,13 @@ import App from './App';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-
-{' '}
-<StrictMode>
-  <CatuiTheme>
-    <App />
-  </CatuiTheme>
-</StrictMode>, );
-
+  <StrictMode>
+    <CatuiTheme>
+      <App />
+    </CatuiTheme>
+  </StrictMode>,
+);
 ```
 
 </TabItem>
 </Tabs>
-```
