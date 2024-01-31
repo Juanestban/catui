@@ -1,10 +1,15 @@
 {
   "name": "catui-design",
-  "version": "0.14.6",
+  "version": "0.14.7",
   "type": "module",
   "description": "UI Design System CatUI",
   "main": "build/index.mjs",
   "types": "build/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Juanestban/catui.git"
+  },
+  "bugs": "https://github.com/Juanestban/catui/issues",
   "scripts": {
     "dev:web": "vite",
     "dev:stories": "storybook dev -p 6006",
