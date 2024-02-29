@@ -10,15 +10,8 @@ export default defineBuildConfig({
       esbuild: {
         color: true,
         jsx: 'automatic',
-      },
-    },
-    {
-      input: './src/index.ts',
-      outDir: './build',
-      cleanDist: true,
-      esbuild: {
-        jsx: 'automatic',
-        jsxImportSource: 'react',
+        minify: true,
+        sourcemap: true,
       },
     },
     {
