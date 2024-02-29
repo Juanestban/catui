@@ -12,6 +12,8 @@ export { Heading, type HeadingProps } from './Heading';
 
 export { Icon, type IconProps } from './Icons';
 
+export { Image, type ImageProps } from './Image';
+
 export { Kbd, type KbdProps } from './Kbd';
 
 export { Progress, type ProgressProps } from './Progress';

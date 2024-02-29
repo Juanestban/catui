@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--colors-gray-400);
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.image {
+  object-fit: cover;
+  margin: 0;
+  transition:
+    border-color 500ms ease,
+    object-fit 500ms ease,
+    filter 500ms ease;
+}
+
+.aspectAuto {
+  aspect-ratio: auto;
+}
+
+.aspect16 {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect1 {
+  aspect-ratio: 1 / 1;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.fill {
+  object-fit: fill;
+}
+
+.withBlur {
+  filter: blur(5px);
+  transition: filter 500ms ease;
+}
+
+.transparent {
+  border-color: var(--colors-transparent);
+  transition:
+    border-color 500ms ease,
+    object-fit 500ms ease,
+    filter 500ms ease;
+}
+
+.unselect {
+  user-select: none;
+}

@@ -4,6 +4,7 @@ import {
   ButtonHTMLAttributes,
   InputHTMLAttributes,
   AnchorHTMLAttributes,
+  ImgHTMLAttributes,
 } from 'react';
 
 export type PrimitiveProps<E extends HTMLElement> = DetailedHTMLProps<HTMLAttributes<E>, E>;
@@ -20,5 +21,10 @@ export type PrimitiveInputProps<E extends HTMLInputElement> = DetailedHTMLProps<
 
 export type PrimitiveAnchorProps<E extends HTMLAnchorElement> = DetailedHTMLProps<
   AnchorHTMLAttributes<E>,
+  E
+>;
+
+export type PrimitiveImageProps<E extends HTMLImageElement> = DetailedHTMLProps<
+  ImgHTMLAttributes<E>,
   E
 >;
