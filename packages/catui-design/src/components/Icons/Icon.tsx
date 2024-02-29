@@ -6,7 +6,7 @@ interface IconProps extends IconBaseProps {
   name: keyof typeof Icons;
 }
 
-const Icon: FC<IconProps> = ({ name, size = 16, color = 'var(--catui-text-color)', ...props }) => {
+const Icon: FC<IconProps> = ({ name, size = 16, color, ...props }) => {
   const RawIcon = Icons[name];
 
   return <RawIcon size={size} color={color} {...props} />;
