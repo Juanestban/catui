@@ -3,9 +3,11 @@ title: Button
 description: Docs for the Buttons
 ---
 
+import { Button, CatuiTheme } from 'catui-design';
+
 this will be docs for the button component
 
-## Import
+### Import
 
 how import this component
 
@@ -13,16 +15,28 @@ how import this component
 import { Button } from 'catui-design';
 ```
 
-## Usage
+### Usage
 
-how to use
+Usage Example
+
+<br></br>
+
+<CatuiTheme client:only>
+  <Button variant="outline" role="danger">
+    Button Example
+  </Button>
+</CatuiTheme>
 
 ```jsx
 const ButtonExample = () => {
-  return <Button>Button Example</Button>;
+  return (
+    <Button variant="outline" role="danger">
+      Button Example
+    </Button>
+  );
 };
 ```
 
-## Props
+### Props
 
 properties

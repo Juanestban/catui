@@ -1,11 +1,13 @@
 ---
-title: Boton
+title: Button
 description: Documentación para los Botones
 ---
 
+import { Button } from 'catui-design';
+
 Esta sera la documentación para el componente boton
 
-## Import
+### Import
 
 Como importar el componente
 
@@ -13,9 +15,17 @@ Como importar el componente
 import { Button } from 'catui-design';
 ```
 
-## Uso
+### Uso
 
-Como usarlo
+Ejemplo de uso
+
+<br></br>
+
+<CatuiTheme client:only>
+  <Button variant="outline" role="danger">
+    Boton Ejemplo
+  </Button>
+</CatuiTheme>
 
 ```jsx
 const ButtonExample = () => {
@@ -23,6 +33,6 @@ const ButtonExample = () => {
 };
 ```
 
-## Propiedades
+### Propiedades
 
 Props
