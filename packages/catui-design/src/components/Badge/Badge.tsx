@@ -6,7 +6,33 @@ import { VariantBadge, PrimitiveProps, Role } from '../../types';
 import s from './Badge.module.css';
 
 interface BadgeProps extends PrimitiveProps<HTMLSpanElement> {
+  /**
+   * `'info' | 'warning' | 'danger' | 'success'`
+   *
+   * **example:**
+   *
+   * ```jsx
+   * <Badge color="info">
+   *   badge
+   * </Badge>
+   * ```
+   *
+   * [link example on storybook](https://catui-storybook.vercel.app/?path=/story/cat-ui-badge--colors)
+   */
   color?: Role;
+  /**
+   * `'outline' | 'subtitle' | 'normal'`
+   *
+   * **example:**
+   *
+   * ```jsx
+   * <Badge variant="outline">
+   *   button
+   * </Badge>
+   * ```
+   *
+   * [link example on storybook](https://catui-storybook.vercel.app/?path=/story/cat-ui-badge--variants)
+   */
   variant?: VariantBadge;
   fontSize?: number | string;
 }
