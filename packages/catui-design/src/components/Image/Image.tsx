@@ -38,7 +38,7 @@ const Image = forwardRef<HTMLImageElement, ImageProps>(
     ref,
   ) => {
     return (
-      <div className={cn(s.container, !withBorder && s.transparent)}>
+      <picture className={cn(s.container, !withBorder && s.transparent)}>
         <img
           ref={ref}
           className={cn(
@@ -54,7 +54,7 @@ const Image = forwardRef<HTMLImageElement, ImageProps>(
           draggable={draggable ?? unselect}
           {...props}
         />
-      </div>
+      </picture>
     );
   },
 ) as FC<ImageProps>;
