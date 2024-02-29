@@ -30,8 +30,8 @@
   },
   "exports": {
     ".": {
-      "types": "./build/index.d.ts",
-      "default": "./build/index.mjs"
+      "types": "./build/components/index.d.ts",
+      "default": "./build/components/index.mjs"
     },
     "./styles/*": "./build/styles/*",
     "./hooks": "./build/hooks/index.mjs"
