@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Meta, StoryFn } from '@storybook/react';
 
-import { Button, ButtonProps } from '.';
+import { Icon, IconProps } from '../Icons';
+import { Button, ButtonProps } from '../Button';
 import { Wrapper } from '../../ui/Wrapper';
 
 type Variant = ButtonProps['variant'];
@@ -18,14 +20,27 @@ const meta = {
     variant: { control: 'select', options: ['normal', 'outline', 'ghost'] as Variant[] },
     size: { control: 'select', options: ['xs', 'sm', 'md', 'lg'] as Size[] },
     role: { control: 'select', options: ['info', 'success', 'warning', 'danger'] as Roles[] },
+    Icon: {
+      control: 'select',
+      options: [
+        'HiAcademicCap',
+        'HiAdjustmentsHorizontal',
+        'HiAdjustmentsVertical',
+        'HiArchiveBox',
+        'HiArchiveBoxArrowDown',
+        'HiArchiveBoxXMark',
+      ] as IconProps['name'][],
+    },
+    iconRight: { control: 'boolean', defaultValue: false },
+    iconLeft: { control: 'boolean', defaultValue: false },
   },
 } satisfies Meta<typeof Button>;
 
 export default meta;
 
-export const Main: StoryFn<ButtonProps> = ({ variant, size, role, children }) => {
+export const Main: StoryFn<ButtonProps> = ({ variant, size, role, Icon: name, children }) => {
   return (
-    <Button variant={variant} size={size} role={role}>
+    <Button variant={variant} size={size} role={role} Icon={<Icon name={name as any} />}>
       {children}
     </Button>
   );
@@ -36,6 +51,9 @@ Main.args = {
   role: 'info',
   size: 'md',
   children: 'Main Button',
+  Icon: undefined,
+  iconLeft: false,
+  iconRight: false,
 };
 
 export const Variants: StoryFn<ButtonProps> = ({ role, size }) => {
@@ -102,4 +120,18 @@ export const Roles: StoryFn<ButtonProps> = ({ variant, size }) => {
 Roles.args = {
   variant: 'normal',
   size: 'md',
+};
+
+export const WithIcon: StoryFn<any> = ({ Icon: name, iconLeft, iconRight }) => {
+  return (
+    <Button Icon={<Icon name={name} />} iconLeft={iconLeft} iconRight={iconRight}>
+      button
+    </Button>
+  );
+};
+
+WithIcon.args = {
+  Icon: 'HiArchiveBox',
+  iconLeft: true,
+  iconRight: false,
 };
