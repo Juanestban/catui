@@ -3,7 +3,9 @@ title: Image
 description: Documentación para el componente Image
 ---
 
-import { Image, CatuiTheme } from 'catui-design';
+import { Image } from 'catui-design';
+
+import { Wrapper } from '../../../../components/Wrapper.tsx'
 
 ### Importing
 
@@ -19,13 +21,13 @@ Ejemplo de uso
 
 <br></br>
 
-<CatuiTheme client:only>
+<Wrapper client:only>
   <Image
     width={400}
     src="https://d.newsweek.com/en/full/2224211/kittens-basket.jpg?w=1600&h=1600&q=88&f=f357dc4ddd678b603551c533366a56ae"
     alt="imagen de gatitos"
   />
-</CatuiTheme>
+</Wrapper>
 
 ```tsx
 const ImagenEjemplo = () => {

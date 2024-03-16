@@ -3,7 +3,9 @@ title: Button
 description: Docs for the Buttons
 ---
 
-import { Button, CatuiTheme } from 'catui-design';
+import { Button } from 'catui-design';
+
+import { Wrapper } from '../../../../components/Wrapper.tsx'
 
 this will be docs for the button component
 
@@ -21,11 +23,11 @@ Usage Example
 
 <br></br>
 
-<CatuiTheme client:only>
+<Wrapper client:only>
   <Button variant="outline" role="danger">
     Button Example
   </Button>
-</CatuiTheme>
+</Wrapper>
 
 ```jsx
 const ButtonExample = () => {
